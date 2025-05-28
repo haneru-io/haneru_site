@@ -33,3 +33,9 @@
   --sl-color-gray-7: #f8f4fe;
   --sl-color-black: #ffffff;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
