@@ -3,7 +3,7 @@ title: Your First Store
 description: A guide in my new Starlight docs site.
 ---
 
-Building your first Shopify store
+
 
 ## Further reading
 

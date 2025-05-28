@@ -15,6 +15,8 @@ There’s no fluff here, no regurgitated docs—just honest, practical insights 
 
 - [Sign up to Shopify](https://accounts.shopify.com/signup) and create your first store. If you already have one, great! Let's build.
 
+
+
 :::note
-We will be using Shopify's default [Fabric](hhttps://themes.shopify.com/themes/fabric/styles/fabric) as our jumping off point for the demo store.
+We will be using Shopify's default [Fabric](https://themes.shopify.com/themes/fabric/styles/fabric) theme as our jumping off point for the demo store.
 :::
