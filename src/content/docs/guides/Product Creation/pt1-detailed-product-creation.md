@@ -5,13 +5,13 @@ description: Demonstrating the first half of the product creation process.
 
 Whilst in previous sections we have covered a few select points of the Shopify admin and back end settings, in this particularly guide I will aim to cover product creation in-depth, as there are many things that can be easily overlooked which can result in things such as incorrect pricing or poor discoverability of your product.
 
-![Shopify Add Product Screen](/src/assets/product_creation/shopify_add_products.png)
+![Shopify Add Product Screen](/images/product_creation/shopify_add_products.png)
 
 If you click the 'Products' tab from the admin menu, you will be presented with a screen similar to the one pictured below (if you've already created a product, it will appear here). Since this is the first product being created for the store, I'll go ahead and click the 'Add Product' button.
 
 Once you click **“Add Product,”** you’ll be taken to the product editor—similar to the one pictured above. (Depending on your screen size, some elements may appear slightly off-screen.) To make things easier to follow, I’ve broken down this first part of the product editor into three sections.
 
-![Shopify Product Creation Editor Screen](/src/assets/product_creation/product_editor_1.png)
+![Shopify Product Creation Editor Screen](/images/product_creation/product_editor_1.png)
 
 1 – **Name, Description & Imagery**
 
@@ -33,11 +33,11 @@ Product status indicates whether or not your product is live on your store. I re
 
 Publishing relates to the **Sales Channels** you want your product to be available on. '**Online Store**' aka the front end of your shop, will be the first option to be enabled by default and you can enable additional sales channels accordingly.
 
-![Available sales channels to publish a product](/src/assets/product_creation/managing_sales_channels.png)
+![Available sales channels to publish a product](/images/product_creation/managing_sales_channels.png)
 
 The Product Organisation section is a key part of how your products will be organised throughout your site.
 
-![Product Organisation Tab](/src/assets/product_creation/product_organisation.png)
+![Product Organisation Tab](/images/product_creation/product_organisation.png)
 
 **Type**  
 Think of this as the category or kind of product you’re selling – like “T-shirt,” “Jacket,” or “Sneakers.” It’s a simple way to group similar items, and it comes in handy when you want to create custom categories or filters later on. If Shopify’s default categories don’t quite fit your setup, this gives you the flexibility to make your own.

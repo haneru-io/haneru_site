@@ -3,7 +3,7 @@ title: Setting Up Your First Shopify Store
 description: A guide on how to setup a Shopify store for the first time.
 sidebar:
   # Set a custom label for the link
- 
+
   # Set a custom order for the link (lower numbers are displayed higher up)
   order: 2
 ---
@@ -14,7 +14,7 @@ Before we jump in to creating our products, there are a few things behind the sc
 
 This section covers key policies that inform customers about how your store operates—everything from returns to shipping details. These are important not only for transparency and trust but also for legal compliance in some regions.
 
-![Shopify Policies Admin Section](/src/assets/store_setup/shopify_policies_section.png)
+![Shopify Policies Admin Section](/images/store_setup/shopify_policies_section.png)
 
 1 - **Return & Refund Policy**
 
@@ -44,7 +44,7 @@ Including a way for customers to reach you is essential for customer support—a
 
 #### 2 - **Locations**
 
-![Shopify Add Location Menu](/src/assets/store_setup/shopify_location_settings.png)
+![Shopify Add Location Menu](/images/store_setup/shopify_location_settings.png)
 
 Speaking from experience, if you’re planning to store inventory in more than one place—like a warehouse, a retail store, or even a home office—it’s really important to set up those locations properly from the very beginning.
 
@@ -52,7 +52,7 @@ Shopify allows you to manage inventory across multiple locations, but adding a n
 
 Taking a bit of extra time upfront to plan your locations can save you a lot of hassle down the road.
 
-![Shopify Add Location Menu](/src/assets/store_setup/shopify_Add_location.png)
+![Shopify Add Location Menu](/images/store_setup/shopify_Add_location.png)
 
 If you would like to add any additional locations, simply click the "Add Location" button and fill in the details. You can toggle on/off whether you'd like to fulfil orders from this location too.
 
@@ -60,7 +60,7 @@ If you would like to add any additional locations, simply click the "Add Locatio
 
 Your Shopify store isn’t limited to just the online storefront. Once your store is set up, you can expand your reach by selling across multiple platforms like **Google**, **Facebook**, **Instagram**, and **TikTok**, all from within Shopify. These are called **sales channels**, and they allow you to publish and promote your products directly on the platforms where your audience already spends time.
 
-![Shopify Sales Channels Menu](/src/assets/store_setup/shopify_sales_channels.png)
+![Shopify Sales Channels Menu](/images/store_setup/shopify_sales_channels.png)
 
 Each channel connects through a Shopify app, and many of them include built-in tools for advertising, syncing product catalogs, and tracking performance. Setting them up early allows you to build a broader presence and potentially reach more customers right from the start.
 

@@ -10,7 +10,7 @@ Some elements of this guide will assume a certain level of knowledge. It will be
 
 When you land on the admin section of your store you should see something like this:
 
-![Shopify Admin Overview](/src/assets/first_store/shopify_admin.jpg)
+![Shopify Admin Overview](/images/first_store/shopify_admin.jpg)
 
 :::note
 I am using a Development store which allows access to some Beta features. If your store back-end look slightly different, don't worry.
