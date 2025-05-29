@@ -22,24 +22,19 @@ export default defineConfig({
       sidebar: [
         {
           label: "Introduction",
-          items: [
-            { label: "Getting Started", slug: "introduction/getting-started" },
-          ],
+          autogenerate: { directory: "introduction" },
         },
         {
           label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Your First Store", slug: "guides/first-store" },
-            {
-              label: "Shopify Store Setup",
-              slug: "guides/shopify-store-setup",
-            },
-          ],
+          autogenerate: { directory: "guides" },
         },
         {
           label: "Reference",
           autogenerate: { directory: "reference" },
+        },
+        {
+          label: "Resources",
+          autogenerate: { directory: "resources" },
         },
       ],
     }),
