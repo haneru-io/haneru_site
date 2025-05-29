@@ -2,3 +2,74 @@
 title: Creating A Product the Right Way Pt.2
 description: Demonstrating the second half of the product creation process.
 ---
+
+So far, we’ve covered the basics: your product’s title, description, images, price, and how it fits into your store’s catalog. Now let’s dive into three more key sections of the product page: **Inventory**, **Variants**, and **Shipping**.
+
+![Product Edtior Part Two](/images/product_creation/product_editor_2.jpg)
+
+---
+
+## 1. Inventory
+
+In Shopify, **inventory** is simply the number of each product variant you have on hand and ready to sell. When you check **Track quantity**, Shopify will automatically subtract from that count each time an order comes in. For example, if you have 10 jackets and someone buys 2, Shopify will update your stock to 8.
+
+- **Why track inventory?**
+  - Keeps your stock counts accurate
+  - Prevents overselling (unless you choose to)
+- **Continue selling when out of stock**  
+   If you’re expecting more stock soon—or want to allow pre-orders—tick this box. Otherwise, once inventory hits zero, the “Add to cart” button will disappear until you restock or show an "out of stock" message.
+- **SKU or barcode**  
+   If you scan items in a physical store or use an external inventory system, enter your SKU/barcode here to keep everything in sync.
+
+---
+
+## 2. Variants
+
+A **variant** is a specific version of your product—like jacket in “Large” or “Blue.” Most clothing items come in multiple sizes, colours or styles, so you’ll use variants to:
+
+- Let customers pick exactly what they want
+- Track inventory per size/color
+- Set different prices or images for each option
+
+Just click **Add variant**, enter your option names (e.g., Size, Colour), then list out the choices (e.g., S, M, L; Blue, Black).
+
+---
+
+## 3. Shipping
+
+If your product is physical, you’ll want to configure its shipping details:
+
+- **This is a physical product**  
+   Check this if you need to ship it. Uncheck if it’s digital (e.g., an ebook or subscription).
+- **Weight**  
+   Used by shipping carriers to calculate rates. Be as accurate as possible—every gram counts!
+- **Country/Region of Origin (COO)**  
+   This tells customs where your product was made. It affects duties, taxes, and import rules. (For more information on COO, check the links at the end.)
+- **Harmonized System (HS) Code**  
+   Think of this as an international “product barcode” used for shipping. Every item has its own HS code. Customs uses it to determine tariffs and duties. It can look confusing to begin with but once you start assigning them to your products, you'll begin to recognise the pattern of your product type.
+
+  :::tip
+  Use the [USITC HTS search tool](https://hts.usitc.gov/) to find HS codes for your products.
+  :::
+
+  ***
+
+  
+  
+## 4. Search Engine Optimisation (SEO)
+
+Search Engine Optimization (SEO) settings control how your product appears in search engines. In Shopify, you can customise:
+
+Page title: The headline shown in search results.
+
+Meta description: The brief summary underneath it.
+
+URL handle: The part of your site’s address that leads to this product (e.g., yourstore.com/products/your-handle).
+
+Optimizing these fields can improve your product’s visibility and click-through rate. SEO is one of the most widely covered topics on the internet when it comes to e-commerce, so an in-depth guide is beyond the scope of this tutorial—but getting these basics right is a great first step.
+
+## Useful Information
+
+- Read World Trade Organization (WTO) - [“Agreement on Rules of Origin”](https://www.wto.org/english/tratop_e/roi_e/roi_info_e.htm)
+
+- Read U.S Customs and Border Protection (CBP) - ["Country of Origin Marking"](https://www.cbp.gov/trade/basic-import-export/marking-requirements)
