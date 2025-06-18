@@ -18,13 +18,13 @@ I am using a Development store which allows access to some Beta features. If you
 
 Not all elements of the admin menu will be covered here as that is beyond the scope of this guide however the items we're concerned with here are:
 
-1 – **Orders:**  
+**Orders:**  
 This is where you can view and manage all customer orders. In addition to processing orders, you can create **draft orders**, purchase **shipping labels**, and monitor **abandoned checkouts** to follow up with potential customers who didn’t complete their purchase.
 
-2 – **Products:**  
+**Products:**  
 This is the central hub for all the products you sell in your store. Each product entry includes essential details like titles, descriptions, pricing, inventory, and media. This section also plays a key role in organizing your **collections** and managing how products appear across your storefront.
 
-3 - **Content:**  
+**Content:**  
 The Content section in Shopify has recently been updated and now includes **Metaobjects** (we’ll dive into those later), **Files**, **Menus**, and **Blog Posts**.
 
 - **Files** is where you upload images and other media assets that you'll use throughout your store, such as for product pages, banners, or blog posts.
