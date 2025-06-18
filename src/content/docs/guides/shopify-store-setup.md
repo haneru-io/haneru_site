@@ -10,7 +10,7 @@ sidebar:
 
 Before we jump in to creating our products, there are a few things behind the scenes that are worthy of note to ensure they don't get forgotten about down the line once the fun begins. Navigate to 'Settings' via the cog in the bottom left corner of your screen to bring up your store settings.
 
-### 1 – Policies
+## Policies
 
 This section covers key policies that inform customers about how your store operates—everything from returns to shipping details. These are important not only for transparency and trust but also for legal compliance in some regions.
 
@@ -42,7 +42,7 @@ This policy should clearly explain which shipping carriers you use, estimated de
 
 Including a way for customers to reach you is essential for customer support—and it’s legally required if you’re selling to customers in the European Union. Make sure your contact details are easy to find and up to date.
 
-#### 2 - **Locations**
+## Locations
 
 ![Shopify Add Location Menu](/images/store_setup/shopify_location_settings.png)
 
@@ -56,7 +56,7 @@ Taking a bit of extra time upfront to plan your locations can save you a lot of 
 
 If you would like to add any additional locations, simply click the "Add Location" button and fill in the details. You can toggle on/off whether you'd like to fulfil orders from this location too.
 
-#### 3 - Apps and Sales Channels
+## Apps and Sales Channels
 
 Your Shopify store isn’t limited to just the online storefront. Once your store is set up, you can expand your reach by selling across multiple platforms like **Google**, **Facebook**, **Instagram**, and **TikTok**, all from within Shopify. These are called **sales channels**, and they allow you to publish and promote your products directly on the platforms where your audience already spends time.
 
