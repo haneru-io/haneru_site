@@ -13,7 +13,7 @@ Once you click **“Add Product,”** you’ll be taken to the product editor—
 
 ![Shopify Product Creation Editor Screen](/images/product_creation/product_editor_1.png)
 
-## 1. Name, Description & Imagery
+### 1. Name, Description & Imagery
 
 The **product name** and **description** are the core pieces of information your customers will rely on to find your product and understand what it offers. You can use the **Rich Text Editor** in the description area to format your text—adding headings, lists, links, and more to make your copy more engaging.
 
@@ -27,7 +27,7 @@ As for the **Product Category** (not to be confused with **Collections**, which 
 
 ---
 
-## 2. Product Status and Organisation
+### 2. Product Status and Organisation
 
 Product status indicates whether or not your product is live on your store. I recommend setting this to 'Draft' in the majority of cases, until you're entirely happy the product is ready to go live. Making changes to a live product is not recommended as this could lead to confusion if you have users active on site.
 
@@ -65,7 +65,7 @@ A good rule of thumb: **choose one clear, relevant tag per product type and stic
 
 ---
 
-## 3. Pricing Information
+### 3. Pricing Information
 
 The third section we're concerned with here is pricing. This is one of several ways you can input pricing for your products.
 
