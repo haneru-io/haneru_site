@@ -83,4 +83,4 @@ Customers won’t see this number, but it’s useful behind the scenes. Adding i
 
 ---
 
-Take a breath, that might seem like a lot to take in and it's only the first part of the show! Grab a coffee, walk the dog, then let's jump in to Part 2 of the product creation process.
+Take a breath, that might seem like a lot to take in and it's only the first part of the show! Let's jump in to Part 2 of the product creation process.
