@@ -1,6 +1,9 @@
 ---
 title: Creating a Product Pt.1
 description: Demonstrating the first half of the product creation process.
+sidebar:
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 1
 ---
 
 Whilst in previous sections we have covered a few select points of the Shopify admin and back end settings, in this particularly guide I will aim to cover product creation in-depth, as there are many things that can be easily overlooked which can result in things such as incorrect pricing or poor discoverability of your product.
