@@ -24,3 +24,15 @@ Shopify often allows you to upload different versions of an image based on deskt
 :::tip
 Use the [Shopify Image Size Guidelines for 2025](https://www.shopify.com/blog/image-sizes) for a full reference on recommened dimensions.
 :::
+
+
+### TL;DR
+
+Upload the correct ratio for your use case.
+
+Always optimise your images. 
+
+Bigger does not equals better.
+
+
+
