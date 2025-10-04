@@ -2,8 +2,8 @@
 title: Your First Store
 description: A guide in my new Starlight docs site.
 sidebar:
- # Set a custom order for the link (lower numbers are displayed higher up)
-  order: 1
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 2
 ---
 
 Some elements of this guide will assume a certain level of knowledge. It will be assumed by this point that you have signed up for a Shopify store and have a product ready to sell. If you are not at that point yet, I recommend circling back to the [Getting Started](/introduction/getting-started/) section which contains more information.
