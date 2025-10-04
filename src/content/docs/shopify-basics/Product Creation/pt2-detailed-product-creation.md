@@ -1,6 +1,9 @@
 ---
 title: Creating A Product Pt.2
 description: Demonstrating the second half of the product creation process.
+sidebar:
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 3
 ---
 
 So far, we’ve covered the basics: your product’s title, description, images, price, and how it fits into your store’s catalog. Now let’s dive into the four remaining key sections of the product page: **Inventory**, **Variants**, **Shipping** and **SEO**.

@@ -3,7 +3,7 @@ title: Using Tags for Smart Collections
 description: How to make use of tags for smart collections.
 sidebar:
   # Set a custom order for the link (lower numbers are displayed higher up)
-  order: 3
+  order: 6
 ---
 
 One of Shopify’s most powerful features is the ability to create **automated collections**. Instead of adding products to a collection one by one, you can set up rules that automatically group products based on things like product tags, vendor, price, or inventory. This keeps your store organized and saves time, especially if you have a large catalog.  

@@ -26,11 +26,16 @@ export default defineConfig({
         },
         {
           label: "Shopify Basics",
-          autogenerate: { directory: "Shopify Basics" },
+          autogenerate: { directory: "shopify-basics" },
         },
+
         {
           label: "Store Management",
           autogenerate: { directory: "store-management-operations" },
+        },
+        {
+          label: "Theme Development",
+          autogenerate: { directory: "theme-development-foundations" },
         },
         {
           label: "Reference",
