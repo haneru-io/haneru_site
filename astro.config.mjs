@@ -8,6 +8,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Haneru",
+      favicon: "/favicon.svg",
       customCss: [
         // Path to your Tailwind base styles:
         "./src/styles/global.css",
