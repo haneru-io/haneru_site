@@ -25,8 +25,12 @@ export default defineConfig({
           autogenerate: { directory: "introduction" },
         },
         {
-          label: "Guides",
-          autogenerate: { directory: "guides" },
+          label: "Shopify Basics",
+          autogenerate: { directory: "Shopify Basics" },
+        },
+        {
+          label: "Store Management",
+          autogenerate: { directory: "store-management-operations" },
         },
         {
           label: "Reference",
