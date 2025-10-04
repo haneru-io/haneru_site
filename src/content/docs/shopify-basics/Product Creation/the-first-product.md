@@ -1,9 +1,12 @@
 ---
 title: A Practical Example of Product Creation
 description: A practical example of creating Shopify products.
+sidebar:
+  # Set a custom order for the link (lower numbers are displayed higher up)
+  order: 1
 ---
 
-Now we have run through the initial requirements of what goes in to a basic Shopify product, let's put it in to practice on our store. We will be creating a Chore Jacket to add to our collection in our apparel store.
+Now we have run through the initial requirements of what goes in to a basic Shopify product, let's put it in to practice on our store. We will be creating a Chore Jacket to add to our collection in our store.
 
 ### 1. Name, Description & Imagery
 

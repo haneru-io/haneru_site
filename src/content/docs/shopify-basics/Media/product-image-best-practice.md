@@ -17,7 +17,7 @@ Not to be confused with **file size** (covered below) — *image size* refers to
 
 The main consideration is to avoid making your images unnecessarily large. For example, uploading a 4000px-wide image when it only needs to display at 1000px forces browsers to load extra data, which slows down your site.  
 
-🔮 Shopify’s recommended dimensions are linked at the bottom of this guide.  
+🔮 Shopify’s recommended dimensions are linked at the bottom of this page.  
 
 ---
 
