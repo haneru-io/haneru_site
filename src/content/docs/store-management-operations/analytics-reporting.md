@@ -41,3 +41,21 @@ WHERE order.created_at >= '2025-01-01'
 GROUP BY product.title
 ORDER BY total_sales DESC
 LIMIT 10;
+```
+This query gives you the top 10 best-selling products for the year 2025.
+
+```sql
+SELECT
+  customer.email,
+  COUNT(order.id) AS orders_count,
+  SUM(order.total_price) AS total_spent
+FROM orders
+WHERE customer.tags CONTAINS 'VIP'
+GROUP BY customer.email
+ORDER BY total_spent DESC
+LIMIT 20;
+```
+
+Here we identify your top 20 VIP customers based on purchase history.
+
+For a more in-depth look at ShopifyQL and building your own queries, you can read the guide [An Intro to Shopify QL](#)
