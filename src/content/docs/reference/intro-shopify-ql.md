@@ -7,12 +7,16 @@ ShopifyQL is Shopify's powerful query language designed specifically for analyzi
 
 ## What is ShopifyQL?
 
-ShopifyQL allows you to write queries directly in Shopify's analytics interface to answer specific business questions about your store. It's particularly useful when you need to:
+ShopifyQL allows you to write queries directly in Shopify's analytics interface to answer specific questions about your store. It's particularly useful when you need to:
 
 - Analyze sales trends and patterns
 - Identify top-performing products or collections
 - Understand customer behavior across different regions
 - Create custom reports that aren't available in standard Shopify analytics
+
+Below is an example of the Shopify QL interface. The queries can be written using ShopifyQL or selected using the UI on the right.
+
+![Shopify QL Dashboard](#)
 
 ## Basic ShopifyQL Syntax
 
@@ -31,28 +35,29 @@ Not all clauses are required - you can build queries as simple or complex as you
 
 ## Example 1: Top Selling Products This Month
 
-Let's start with a common question: which products are selling best this month?
+Let's start with a common question: which products are selling best this month:
 
 ```sql
-FROM orders
-SHOW product_title, sum(quantity) AS total_sold
-WHERE order_date >= FIRST_DAY_OF_MONTH
-GROUP BY product_title
-ORDER BY total_sold DESC
-LIMIT 10
+FROM sales
+  SHOW net_sales
+  GROUP BY product_title WITH TOTALS
+  SINCE 2024-10-01 UNTIL 2024-10-31
+  ORDER BY net_sales DESC
+  LIMIT 10
+VISUALIZE net_sales
 ```
 
 **What this query does:**
-- `FROM orders` - pulls data from your orders
-- `SHOW product_title, sum(quantity)` - displays product names and calculates total quantity sold
-- `WHERE order_date >= FIRST_DAY_OF_MONTH` - filters to only include orders from this month
-- `GROUP BY product_title` - combines all sales for each product
-- `ORDER BY total_sold DESC` - sorts from highest to lowest sales
-- `LIMIT 10` - shows only the top 10 results
+- Reads `FROM SALES` as the dataset to look up
+- Uses `GROUP BY` 
+- Specifices date range with `SINCE`
+- `ORDER BY` presents the data from high to low
+- Restrict returned number of products to 10 with `LIMIT`
+
 
 ## Example 2: Revenue by Country
 
-Understanding which countries generate the most revenue helps you target marketing efforts and plan inventory:
+Another common report you may want to run is Revenue by Country
 
 ```sql
 FROM orders
