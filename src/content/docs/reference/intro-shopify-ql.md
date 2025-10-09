@@ -48,12 +48,12 @@ VISUALIZE net_sales
 ```
 
 **What this query does:**
+
 - Reads `FROM SALES` as the dataset to look up
-- Uses `GROUP BY` 
+- Uses `GROUP BY`
 - Specifices date range with `SINCE`
 - `ORDER BY` presents the data from high to low
 - Restrict returned number of products to 10 with `LIMIT`
-
 
 ## Example 2: Revenue by Country
 
@@ -69,6 +69,7 @@ LIMIT 15
 ```
 
 **What this query does:**
+
 - Uses `billing_region_name` to identify the customer's country
 - `sum(total_sales)` calculates total revenue from each country
 - Filters to show data from the start of the year onwards
@@ -81,14 +82,14 @@ You can adjust the date filter to focus on different time periods, such as the l
 Want to know if certain days of the week bring in higher-value orders? This insight can help optimize your marketing schedule:
 
 ```sql
-FROM orders
-SHOW day_of_week(order_date) AS day, avg(total_sales) AS avg_order_value
-WHERE order_date >= FIRST_DAY_OF_MONTH
-GROUP BY day
-ORDER BY avg_order_value DESC
+FROM sales
+  SHOW average_order_value
+  TIMESERIES day_of_week WITH TOTALS
+VISUALIZE average_order_value
 ```
 
 **What this query does:**
+
 - `day_of_week(order_date)` extracts which day of the week each order was placed
 - `avg(total_sales)` calculates the average order value for each day
 - Groups results by day of the week
