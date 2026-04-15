@@ -53,26 +53,26 @@ export default defineConfig({
               label: "Google Sheets → Shopify Pricing",
               collapsed: false,
               items: [
-                // Add the 'label' property to override the raw slug name
+                // Using 'link' instead of 'slug' to force the correct label display
                 {
                   label: "Overview",
-                  slug: "integrations/google-sheets-pricing",
+                  link: "/integrations/google-sheets-pricing/",
                 },
                 {
                   label: "Part 1",
-                  slug: "integrations/google-sheets-pricing/part-1",
+                  link: "/integrations/google-sheets-pricing/part-1/",
                 },
                 {
                   label: "Part 2",
-                  slug: "integrations/google-sheets-pricing/part-2",
+                  link: "/integrations/google-sheets-pricing/part-2/",
                 },
                 {
                   label: "Part 3",
-                  slug: "integrations/google-sheets-pricing/part-3",
+                  link: "/integrations/google-sheets-pricing/part-3/",
                 },
                 {
                   label: "Part 4",
-                  slug: "integrations/google-sheets-pricing/part-4",
+                  link: "/integrations/google-sheets-pricing/part-4/",
                 },
               ],
             },
@@ -80,7 +80,12 @@ export default defineConfig({
         },
         {
           label: "About",
-          items: [{ label: "About Haneru", slug: "about" }],
+          items: [
+            {
+              label: "About Haneru",
+              link: "/about/",
+            },
+          ],
         },
       ],
     }),
