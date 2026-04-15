@@ -47,6 +47,10 @@ export default defineConfig({
           autogenerate: { directory: "resources" },
         },
         {
+          label: "Integrations",
+          autogenerate: { directory: "integrations" },
+        },
+        {
           label: "About",
           items: [{ label: "About Haneru", slug: "about" }],
         },
