@@ -105,22 +105,22 @@ Much cleaner. That's your base sheet sorted.
 
 ---
 
-### Step 2: Build Your Pricing Sheet
+### Step 2: Your Pricing Sheet
 
-Create a new Google Sheet — or use an existing pricing spreadsheet if you have one. Set up the following columns:
+Good news — the cleaned export from Step 1 is already your pricing sheet. You don't need to create anything new. After removing the duplicate variant rows you should have one row per product with these four columns:
 
 | Column | Header | Description |
 |--------|--------|-------------|
-| A | `Handle` | The Shopify product Handle from the export |
-| B | `Title` | Product name — not used by the script, but useful for human readability |
-| C | `Cost` | Your cost price (what you pay the supplier) |
-| D | `Price` | Your retail selling price |
-| E | `Compare At Price` | The original price, shown crossed out when a product is on sale. Leave blank if the product is not on sale. |
+| A | `Handle` | Unique product identifier — this is what the script uses to find each product |
+| B | `Title` | Product name — not used by the script, just there so you can read the sheet like a human |
+| C | `Variant SKU` | Your internal SKU reference |
+| D | `Variant Price` | The retail price you want to sync to Shopify |
+| E | `Cost per item` | Your cost price — used for margin reporting in Shopify, not visible to customers |
 
-Populate one row per product. If you have 2,000 products, you'll have 2,000 rows — not 2,000 × number of variants.
+This is now your live pricing document. When prices need updating, this is where you make the change — and the script takes care of getting it into Shopify.
 
 :::tip
-Copy the Handle and Title columns directly from your Shopify export rather than typing them. The Handle especially needs to be exact — any typo means the script won't find that product and it'll be skipped silently.
+The Handle column is the one that cannot have any errors. A single typo means the script won't find that product and will skip it without any obvious warning. Copy it from the export rather than typing it manually.
 :::
 
 ---
@@ -145,9 +145,9 @@ This is a small step but worth doing before you share the sheet with anyone else
 
 ### What You Should Have at the End of Part 1
 
-- A Google Sheet with one row per product
-- Column A populated with exact Shopify Handles
-- Columns C, D, and E populated with your cost, retail, and compare-at prices
+- Your cleaned Shopify export open in Google Sheets
+- One row per product with Handle, Title, Variant SKU, Variant Price, and Cost per item
+- Duplicate variant rows removed
 - The sheet tab named consistently
 
 That's the sheet done. In Part 2 we'll set up API access in Shopify so the script has permission to write to your store.
