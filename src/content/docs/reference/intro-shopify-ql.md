@@ -31,7 +31,14 @@ ORDER BY [sorting]
 LIMIT [number]
 ```
 
-Not all clauses are required - you can build queries as simple or complex as your analysis needs.
+Not all clauses are required - you can build queries as simple or complex as your analysis needs. But first let's take a closer look at the parameters and theri defiinitions:
+
+`FROM` - Specifies the dataset you'll pull from. Such as sales, customers, online sessions. Pretty much everything that is logged as an activity by Shopify is able to be queried.
+`SHOW` - Choose the metric you want to explore from the dataset you've chosen. Naturally, this will yield different options based on what you're looking at. For exmaple, should you select `SALES` you'll be able to explore all associated metrics you'd from `customer_name` through to `average_order_value`.
+`WHERE` - This is used to filter your data based on specific conditions. It helps you narrow down results to only the records that match your criteria. For example `WHERE` `product_title` `CONTAINS` 'chore'. This query returns all products whose titles include the word "chore" — for instance, any product with "chore jacket" in its name.
+`GROUP BY` - 
+`ORDER BY` -
+`LIMIT` -
 
 ## Example 1: Top Selling Products This Month
 

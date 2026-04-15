@@ -10,7 +10,7 @@ One of Shopify’s most powerful features is the ability to create **automated c
 
 ---
 
-## Step 1: Create a New Collection
+### Step 1: Create a New Collection
 
 1. In your Shopify admin, go to **Products > Collections**.
 2. Click **Create Collection**.
@@ -18,14 +18,14 @@ One of Shopify’s most powerful features is the ability to create **automated c
 
 ---
 
-## Step 2: Choose Automated Collection Type
+### Step 2: Choose Automated Collection Type
 
 - Under **Collection type**, select **Automated**.
 - You’ll now see options to add **Conditions**.
 
 ---
 
-## Step 3: Set Your Conditions
+### Step 3: Set Your Conditions
 
 Conditions let you define the rules for what products appear in the collection. You can choose to match:
 
@@ -48,7 +48,7 @@ Common condition types include:
 
 ---
 
-## Step 4: Keep It Organized with Tags
+### Step 4: Keep It Organized with Tags
 
 Tags are one of the simplest and most flexible ways to manage collections.
 
@@ -58,7 +58,7 @@ Tags are one of the simplest and most flexible ways to manage collections.
 
 ---
 
-## Step 5: Save and Preview
+### Step 5: Save and Preview
 
 Once your conditions are set:
 
@@ -68,7 +68,7 @@ Once your conditions are set:
 
 ---
 
-## Tips for Smart Collections
+### Tips for Smart Collections
 
 - Use **consistent naming conventions** for tags (e.g., always lowercase, avoid spaces like `t-shirt` instead of `T Shirt`).
 - Mix and match conditions — for example:

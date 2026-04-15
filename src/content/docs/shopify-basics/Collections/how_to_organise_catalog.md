@@ -5,8 +5,6 @@ sidebar:
   order: 5
 ---
 
-# How to Organise Your Catalog
-
 ## 1. Understand What Collections Are
 
 Collections are organised groups of products in your store that make navigation easy for customers.  
@@ -15,7 +13,7 @@ Collections in Shopify serve the same purpose.
 
 ---
 
-## 2. Learn the Types of Collections
+### 2. Learn the Types of Collections
 
 There are two primary types of collections:
 
@@ -27,7 +25,7 @@ There are two primary types of collections:
 An easy way to ensure products of a similar type are automatically added to the correct category is by using tags.
 
 :::tip
-Not clear on Tags? Check out [this article]() which explains what tags are and how to use them.
+Not clear on Tags? Check out [this article](/src/content/docs/shopify-basics/Collections/using_tags_for_collections.md) which explains what tags are and how to use them.
 :::
 
 For example, in the demo store, all jackets tagged with **“Jacket”** will automatically appear in the Jackets collection.  
@@ -39,7 +37,7 @@ Once the correct tag has been added, the store will automatically display the re
 
 ---
 
-## 3. Adjust Collection Settings
+### 3. Adjust Collection Settings
 
 After creating your collection, review the settings found below the collection conditions.  
 Here, you can view which products have been added and how you want to order them.
@@ -52,7 +50,7 @@ Here, you can view which products have been added and how you want to order them
 
 ---
 
-## 4. Optimise SEO Settings
+### 4. Optimise SEO Settings
 
 Next, configure your **Search Engine Listing** settings. This controls how your collection appears in search results on platforms like Google.
 
