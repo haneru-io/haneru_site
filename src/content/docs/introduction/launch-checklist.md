@@ -112,8 +112,6 @@ This is the most important step on the list and the one most often skipped.
 4. Verify the order appears in **Orders** with the right details
 5. Disable the Bogus gateway and re-enable your real payment method
 
-![Test order in Shopify admin showing successful placement](/images/launch/test_order.png)
-
 :::caution
 Do not skip this. Checkout issues are the most damaging thing to discover after launch — they mean customers are trying to buy and can't. Test the full flow including applying a discount code if you plan to run one at launch.
 :::
