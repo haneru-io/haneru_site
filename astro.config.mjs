@@ -48,7 +48,19 @@ export default defineConfig({
         },
         {
           label: "Integrations",
-          autogenerate: { directory: "integrations" },
+          items: [
+            {
+              label: "Google Sheets → Shopify Pricing",
+              collapsed: false,
+              items: [
+                { slug: "integrations/google-sheets-pricing" },
+                { slug: "integrations/google-sheets-pricing/part-1" },
+                { slug: "integrations/google-sheets-pricing/part-2" },
+                { slug: "integrations/google-sheets-pricing/part-3" },
+                { slug: "integrations/google-sheets-pricing/part-4" },
+              ],
+            },
+          ],
         },
         {
           label: "About",
