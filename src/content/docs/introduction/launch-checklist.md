@@ -54,6 +54,10 @@ Don't launch with test mode still on. Orders will appear to succeed but no payme
 
 ![Shipping and delivery showing configured zones and rates](/images/launch/shipping_rates_overview.png)
 
+:::note[Shopify Markets]
+If your shipping zones look more granular than expected — separate zones for regions like EU, UK, or a handling surcharge zone for more distant destinations — you may be looking at a store configured with **Shopify Markets**. Markets is a Shopify Plus feature that lets you sell to different regions with tailored pricing, currencies, and shipping rules per market. If you're on a standard plan, your shipping setup will be simpler. For a full overview of how Markets works, including how to manage market-specific pricing via the API, see [Shopify Markets](/store-management-operations/markets).
+:::
+
 ---
 
 ## 4. Policies
