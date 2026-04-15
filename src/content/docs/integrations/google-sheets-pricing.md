@@ -151,3 +151,50 @@ This is a small step but worth doing before you share the sheet with anyone else
 - The sheet tab named consistently
 
 That's the sheet done. In Part 2 we'll set up API access in Shopify so the script has permission to write to your store.
+
+---
+
+## Part 2: Creating Your Shopify App
+
+In this part we handle the Shopify side of things. We need to create a custom app that gives our script the credentials and permissions to communicate with your store.
+
+### Step 1: Getting to the Dev Dashboard
+
+Head to **Settings → Apps and sales channels**. Near the top of the page you'll see an **App development** section with a **Build apps in Dev Dashboard** button.
+
+![Shopify Settings showing the App development section and Build apps in Dev Dashboard button](/images/gsheet_integration/shopify_settings_for_apps.png)
+
+Before clicking it, one thing worth knowing. As of January 2026, Shopify retired the old legacy custom apps system. If you've come across tutorials referencing Private Apps or an API key setup under Settings, they're out of date. The Dev Dashboard is the current approach and it's where we're headed.
+
+### Step 2: Create the App and Configure Settings
+
+Once in the Dev Dashboard, click **Create app** in the top right and give it a name. Something like `price-sync` is descriptive enough. Hit create and you'll land on the app settings page.
+
+![Full app settings page showing App name, URLs, Webhooks, and Scopes sections](/images/gsheet_integration/shopify_app_settings.png)
+
+There's quite a bit on this page. Here's what matters and what doesn't.
+
+**URLs and Webhooks API version — skip these entirely.** These sections are for apps that embed inside the Shopify admin interface or need to receive real-time event notifications from your store. Our script does neither. It just pushes data to Shopify when you run it, so leave everything here as it is and scroll down.
+
+**Scopes — this is the important bit.** Scopes are permissions. They tell Shopify exactly what your app is allowed to read or write, so it's good practice to request only what's genuinely needed.
+
+Click **Select scopes** under the Access section and add:
+
+- `read_products`
+- `write_products`
+
+`read_products` lets the script find your products by Handle. `write_products` lets it update their prices. That covers everything the script does. Save your scopes once selected.
+
+### Step 5: Credentials
+
+*Screenshots coming — this step will cover installing the app on your store and retrieving the Client ID and Secret needed for the script.*
+
+---
+
+### What You Should Have at the End of Part 2
+
+- A custom app created in the Shopify Dev Dashboard
+- Scopes set to `read_products` and `write_products`
+- App installed on your store with credentials ready
+
+In Part 3 we'll write the script itself and connect everything together.
