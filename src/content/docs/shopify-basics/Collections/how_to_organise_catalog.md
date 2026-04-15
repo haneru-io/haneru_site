@@ -25,7 +25,7 @@ There are two primary types of collections:
 An easy way to ensure products of a similar type are automatically added to the correct category is by using tags.
 
 :::tip
-Not clear on Tags? Check out [this article](/src/content/docs/shopify-basics/Collections/using_tags_for_collections.md) which explains what tags are and how to use them.
+Not clear on Tags? Check out [this article](/shopify-basics/collections/using_tags_for_collections) which explains what tags are and how to use them.
 :::
 
 For example, in the demo store, all jackets tagged with **“Jacket”** will automatically appear in the Jackets collection.  

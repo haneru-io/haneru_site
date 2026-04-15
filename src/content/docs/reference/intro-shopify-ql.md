@@ -36,9 +36,9 @@ Not all clauses are required - you can build queries as simple or complex as you
 `FROM` - Specifies the dataset you'll pull from. Such as sales, customers, online sessions. Pretty much everything that is logged as an activity by Shopify is able to be queried.
 `SHOW` - Choose the metric you want to explore from the dataset you've chosen. Naturally, this will yield different options based on what you're looking at. For exmaple, should you select `SALES` you'll be able to explore all associated metrics you'd from `customer_name` through to `average_order_value`.
 `WHERE` - This is used to filter your data based on specific conditions. It helps you narrow down results to only the records that match your criteria. For example `WHERE` `product_title` `CONTAINS` 'chore'. This query returns all products whose titles include the word "chore" — for instance, any product with "chore jacket" in its name.
-`GROUP BY` - 
-`ORDER BY` -
-`LIMIT` -
+`GROUP BY` - Groups your results by a specific field, collapsing individual rows into summarised totals. For example, `GROUP BY product_title` returns one row per product with its aggregated values, rather than a separate row for every individual order line.
+`ORDER BY` - Sorts your results by a chosen field. Combine with `ASC` (ascending, lowest first) or `DESC` (descending, highest first). For example, `ORDER BY net_sales DESC` puts your best-selling products at the top.
+`LIMIT` - Caps the number of rows returned. Useful for "top N" queries — for example, `LIMIT 10` returns only the top 10 results after sorting. Without a limit, large datasets can return thousands of rows.
 
 ## Example 1: Top Selling Products This Month
 
