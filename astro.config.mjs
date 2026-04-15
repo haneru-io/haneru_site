@@ -53,11 +53,27 @@ export default defineConfig({
               label: "Google Sheets → Shopify Pricing",
               collapsed: false,
               items: [
-                { slug: "integrations/google-sheets-pricing" },
-                { slug: "integrations/google-sheets-pricing/part-1" },
-                { slug: "integrations/google-sheets-pricing/part-2" },
-                { slug: "integrations/google-sheets-pricing/part-3" },
-                { slug: "integrations/google-sheets-pricing/part-4" },
+                // Add the 'label' property to override the raw slug name
+                {
+                  label: "Overview",
+                  slug: "integrations/google-sheets-pricing",
+                },
+                {
+                  label: "Part 1",
+                  slug: "integrations/google-sheets-pricing/part-1",
+                },
+                {
+                  label: "Part 2",
+                  slug: "integrations/google-sheets-pricing/part-2",
+                },
+                {
+                  label: "Part 3",
+                  slug: "integrations/google-sheets-pricing/part-3",
+                },
+                {
+                  label: "Part 4",
+                  slug: "integrations/google-sheets-pricing/part-4",
+                },
               ],
             },
           ],
