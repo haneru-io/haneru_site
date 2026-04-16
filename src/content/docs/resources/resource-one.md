@@ -1,3 +1,0 @@
----
-title: Shopify Developer Blog
----
