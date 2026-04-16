@@ -15,7 +15,7 @@ Head to **Settings → Apps and sales channels**. Near the top of the page you'l
 
 ![Shopify Settings showing the App development section and Build apps in Dev Dashboard button](/images/gsheet_integration/shopify_settings_for_apps.png)
 
-Before clicking it, one thing worth knowing. As of January 2026, Shopify retired the old legacy custom apps system. If you've come across tutorials referencing Private Apps or an API key setup under Settings, they're out of date. The Dev Dashboard is the current approach and it's where we're headed.
+Before clicking it, one thing worth knowing. As of January 2026, Shopify retired the old legacy custom apps system. If you've come across tutorials referencing Private Apps or an API key setup under Settings, they're out of date. The Dev Dashboard is the current approach and it's where we're headed. Don't worry, the process has not changed too much.
 
 ---
 
