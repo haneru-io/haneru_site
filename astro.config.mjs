@@ -59,19 +59,19 @@ export default defineConfig({
                   link: "/integrations/google-sheets-pricing/",
                 },
                 {
-                  label: "Part 1",
+                  label: "Part 1 — The Sheet",
                   link: "/integrations/google-sheets-pricing/part-1/",
                 },
                 {
-                  label: "Part 2",
+                  label: "Part 2 — Shopify App",
                   link: "/integrations/google-sheets-pricing/part-2/",
                 },
                 {
-                  label: "Part 3",
+                  label: "Part 3 — The Script",
                   link: "/integrations/google-sheets-pricing/part-3/",
                 },
                 {
-                  label: "Part 4",
+                  label: "Part 4 — Automating",
                   link: "/integrations/google-sheets-pricing/part-4/",
                 },
               ],
