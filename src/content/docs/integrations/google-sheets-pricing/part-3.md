@@ -11,10 +11,9 @@ You don't need to write any of it from scratch. Copy the full script below, past
 
 ---
 
-## Adding the Script to Your Sheet
+### Adding the Script to Your Sheet
 
 Open your pricing spreadsheet and go to **Extensions → Apps Script**. This opens the Apps Script editor in a new tab. You'll see a default empty function, you can simply delete it and paste in the full script below.
----
 
 ## The Full Script
 
@@ -244,7 +243,7 @@ The `Utilities.sleep(500)` between each variant call is just a pause to make sur
 
 Every time the script runs it writes a row to a tab called Sync Log, one row per product, with a timestamp, the handle, whether it succeeded, and any detail worth knowing. If a product handle isn't found in Shopify or something goes wrong mid-sync, that's where you'll see it. The tab is created automatically the first time the script runs.
 
-### The menu
+### The Menu
 
 `onOpen` adds a **Shopify Sync** menu to your spreadsheet toolbar when the sheet is opened. That's how you'll run the sync. No need to go back into the Apps Script editor once it's set up.
 
