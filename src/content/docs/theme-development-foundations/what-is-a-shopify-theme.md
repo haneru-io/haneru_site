@@ -5,9 +5,9 @@ sidebar:
     order: 1
 ---
 
-A Shopify theme is the code that controls how your store looks and behaves on the front end — everything a customer sees when they visit your site. Under the hood, a theme is a collection of files: HTML, CSS, JavaScript, and a templating language called **Liquid**, which is unique to Shopify.
+A Shopify theme is the code that controls how your store looks and behaves on the front end. It covers everything a customer sees when they visit your site. Under the hood, a theme is a collection of files: HTML, CSS, JavaScript, and a templating language called **Liquid**, which is unique to Shopify.
 
-You don't need to touch any of this to run a store. But understanding what a theme is — even at a high level — makes you a more capable store owner and opens the door to customisations that go beyond what the visual editor allows.
+You don't need to touch any of this to run a store. But understanding what a theme is, even at a high level, makes you a more capable store owner and opens the door to customisations that go beyond what the visual editor allows.
 
 ---
 
@@ -31,11 +31,11 @@ Always duplicate your theme before editing code. Go to **Online Store → Themes
 
 Shopify's [Theme Store](https://themes.shopify.com) has both free and paid options.
 
-**Free themes** are built and maintained by Shopify. They're well-built, performant, and regularly updated. Dawn is the current flagship free theme — it's fast, clean, and a solid starting point for most stores.
+**Free themes** are built and maintained by Shopify. They're well-built, performant, and regularly updated. Dawn is the current flagship free theme. It's fast, clean, and a solid starting point for most stores.
 
 **Paid themes** range from roughly $200–$400 and are built by third-party developers. They often come with more built-in features and more distinctive visual styles, which can reduce the need for third-party apps. Whether the cost is justified depends on how much your store's visual identity matters to your customers.
 
-For a new store, starting with a free theme is entirely reasonable. You can switch later — your products, content, and settings don't move with the theme, but migrating is manageable.
+For a new store, starting with a free theme is entirely reasonable. You can switch later. Your products, content, and settings don't move with the theme, but migrating is manageable.
 
 ---
 
@@ -43,13 +43,13 @@ For a new store, starting with a free theme is entirely reasonable. You can swit
 
 Liquid is Shopify's templating language. It lives inside your theme files and does one job: it pulls data from your store and outputs it as HTML for the browser to display.
 
-When a customer visits a product page, Shopify doesn't serve a static file. It takes the Liquid template for product pages, fills in the relevant data — title, price, images, variants — and generates the HTML on the fly. This happens on every page load.
+When a customer visits a product page, Shopify doesn't serve a static file. It takes the Liquid template for product pages, fills in the relevant data (title, price, images, variants) and generates the HTML on the fly. This happens on every page load.
 
 Liquid has three main building blocks:
 
 ---
 
-### 1. Objects — Output Data
+### 1. Objects: Output Data
 
 Objects are wrapped in double curly braces `{{ }}` and output values from your store.
 
@@ -59,13 +59,13 @@ Objects are wrapped in double curly braces `{{ }}` and output values from your s
 {{ shop.name }}
 ```
 
-These pull data directly from Shopify — the product title, its formatted price, your store name. You'll see these throughout any theme file.
+These pull data directly from Shopify: the product title, its formatted price, your store name. You'll see these throughout any theme file.
 
 ---
 
-### 2. Tags — Logic and Control
+### 2. Tags: Logic and Control
 
-Tags are wrapped in curly braces with percent signs `{% %}` and handle logic — conditionals, loops, and layout structure.
+Tags are wrapped in curly braces with percent signs `{% %}` and handle logic: conditionals, loops, and layout structure.
 
 ```liquid
 {% if product.available %}

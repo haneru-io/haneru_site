@@ -5,7 +5,7 @@ sidebar:
   order: 3
 ---
 
-Before you flip the switch and take your store live, it's worth running through a checklist. Launching with something broken or missing is easy to do when you're focused on the exciting parts — this page is the boring-but-important bit.
+Before you flip the switch and take your store live, it's worth running through a checklist. Launching with something broken or missing is easy to do when you're focused on the exciting parts. This page covers the boring-but-important bit.
 
 Work through each section before you go live. Most of these take minutes to fix beforehand but can cost real customers if you discover them after launch.
 
@@ -15,7 +15,7 @@ Work through each section before you go live. Most of these take minutes to fix 
 
 **Business details**
 - Store name, address, and contact email are filled in under **Settings → General**
-- Timezone and currency are set correctly — these affect reporting and are annoying to change later
+- Timezone and currency are set correctly (these affect reporting and are annoying to change later)
 - Store email (Settings → General) is a real monitored inbox, not a placeholder
 
 **Domain**
@@ -25,7 +25,7 @@ Work through each section before you go live. Most of these take minutes to fix 
 ![Domain settings showing a connected custom domain](/images/launch/domain_settings.png)
 
 :::tip
-Even if your custom domain is connected, double-check that it's set as **primary**. If it isn't, Shopify will redirect traffic to your `.myshopify.com` URL — which looks unprofessional and can affect SEO.
+Even if your custom domain is connected, double-check that it's set as **primary**. If it isn't, Shopify will redirect traffic to your `.myshopify.com` URL, which looks unprofessional and can affect SEO.
 :::
 
 ---
@@ -35,7 +35,7 @@ Even if your custom domain is connected, double-check that it's set as **primary
 - At least one payment provider is active under **Settings → Payments**
 - If using Shopify Payments, your banking details and business information are fully entered and verified
 - PayPal is connected if you want to offer it as an alternative (many customers prefer it)
-- Test mode is **off** — this is easy to forget if you were testing earlier
+- Test mode is **off** (easy to forget if you were testing earlier)
 
 ![Shopify Payments configured and active](/images/launch/settings_payments_overview.png)
 
@@ -50,12 +50,12 @@ Don't launch with test mode still on. Orders will appear to succeed but no payme
 - At least one shipping zone and rate is configured under **Settings → Shipping and delivery**
 - Rates reflect what you'll actually charge (or free shipping if that's your model)
 - If shipping internationally, separate zones are set up for each region
-- Product weights are filled in on all products — carriers need these to calculate rates accurately
+- Product weights are filled in on all products (carriers need these to calculate rates accurately)
 
 ![Shipping and delivery showing configured zones and rates](/images/launch/shipping_rates_overview.png)
 
 :::note[Shopify Markets]
-If your shipping zones look more granular than expected — separate zones for regions like EU, UK, or a handling surcharge zone for more distant destinations — you may be looking at a store configured with **Shopify Markets**. Markets is a Shopify Plus feature that lets you sell to different regions with tailored pricing, currencies, and shipping rules per market. If you're on a standard plan, your shipping setup will be simpler. For a full overview of how Markets works, including how to manage market-specific pricing via the API, see [Shopify Markets](/store-management-operations/markets).
+If your shipping zones look more granular than expected, with separate zones for regions like EU, UK, or a handling surcharge zone for more distant destinations, you may be looking at a store configured with **Shopify Markets**. Markets is a Shopify Plus feature that lets you sell to different regions with tailored pricing, currencies, and shipping rules per market. If you're on a standard plan, your shipping setup will be simpler. For a full overview of how Markets works, including how to manage market-specific pricing via the API, see [Shopify Markets](/store-management-operations/markets).
 :::
 
 ---
@@ -70,7 +70,7 @@ All five policy fields are filled in under **Settings → Policies**:
 - Shipping Policy
 - Contact Information
 
-None of them should contain Shopify placeholder text. Review each one and make sure it reflects your actual store — especially the return policy.
+None of them should contain Shopify placeholder text. Review each one and make sure it reflects your actual store, especially the return policy.
 
 ---
 
@@ -79,9 +79,9 @@ None of them should contain Shopify placeholder text. Review each one and make s
 - All products you want live are set to **Active** status
 - All products you're not ready for are set to **Draft**
 - Every product has at least one image
-- Pricing is correct — including compare-at prices if you're showing a sale
+- Pricing is correct, including compare-at prices if you're showing a sale
 - Inventory is set and tracking is enabled where needed
-- SEO fields (page title and meta description) are filled in on key products — at minimum your hero products and bestsellers
+- SEO fields (page title and meta description) are filled in on key products, at minimum your hero products and bestsellers
 
 :::note
 You don't need perfect SEO on every product before launch. But leaving every product with no meta description means Google will generate one from your product description, which is rarely ideal.
@@ -92,7 +92,7 @@ You don't need perfect SEO on every product before launch. But leaving every pro
 ## 6. Collections
 
 - Collections are set up and populated with the right products
-- Smart collection conditions are pulling in the correct items — scroll down to preview the product list when creating or editing a collection
+- Smart collection conditions are pulling in the correct items (scroll down to preview the product list when creating or editing a collection)
 - Collection images are added where your theme displays them
 - SEO fields are filled in on main collections
 
@@ -101,7 +101,7 @@ You don't need perfect SEO on every product before launch. But leaving every pro
 ## 7. Navigation
 
 - Main menu links are correct and lead to real pages (not 404s)
-- Footer links are correct — policies typically live here automatically
+- Footer links are correct (policies typically live here automatically)
 - If you have a search bar, test that it returns relevant results
 
 ---
@@ -117,7 +117,7 @@ This is the most important step on the list and the one most often skipped.
 5. Disable the Bogus gateway and re-enable your real payment method
 
 :::caution
-Do not skip this. Checkout issues are the most damaging thing to discover after launch — they mean customers are trying to buy and can't. Test the full flow including applying a discount code if you plan to run one at launch.
+Do not skip this. Checkout issues are the most damaging thing to discover after launch. Customers who can't complete a purchase rarely come back. Test the full flow including applying a discount code if you plan to run one at launch.
 :::
 
 ---
@@ -126,7 +126,7 @@ Do not skip this. Checkout issues are the most damaging thing to discover after 
 
 - Go to **Settings → Notifications** and review the customer-facing emails: order confirmation, shipping notification, and abandoned checkout
 - The sender email is something recognisable (not `notifications@shopify.com`)
-- The email content reflects your brand — the default Shopify templates are functional but generic
+- The email content reflects your brand (the default Shopify templates are functional but generic)
 
 ---
 

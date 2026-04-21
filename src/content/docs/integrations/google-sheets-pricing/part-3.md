@@ -232,7 +232,7 @@ The block at the top is the only part of the script you need to touch. Paste in 
 
 ### Auth
 
-Before the script can talk to Shopify, it needs to exchange your Client ID and Secret for an access token. That's what `getAccessToken` does — it sends your credentials to Shopify and gets back a temporary token that's used for every API call in that run. This happens once at the start of each sync.
+Before the script can talk to Shopify, it needs to exchange your Client ID and Secret for an access token. That's what `getAccessToken` does. It sends your credentials to Shopify and gets back a temporary token that's used for every API call in that run. This happens once at the start of each sync.
 
 ### The Sync loop
 
@@ -242,16 +242,16 @@ The `Utilities.sleep(500)` between each variant call is just a pause to make sur
 
 ### The Sync Log
 
-Every time the script runs it writes a row to a tab called Sync Log — one row per product, with a timestamp, the handle, whether it succeeded, and any detail worth knowing. If a product handle isn't found in Shopify or something goes wrong mid-sync, that's where you'll see it. The tab is created automatically the first time the script runs.
+Every time the script runs it writes a row to a tab called Sync Log, one row per product, with a timestamp, the handle, whether it succeeded, and any detail worth knowing. If a product handle isn't found in Shopify or something goes wrong mid-sync, that's where you'll see it. The tab is created automatically the first time the script runs.
 
 ### The menu
 
-`onOpen` adds a **Shopify Sync** menu to your spreadsheet toolbar when the sheet is opened. That's how you'll run the sync — no need to go back into the Apps Script editor once it's set up.
+`onOpen` adds a **Shopify Sync** menu to your spreadsheet toolbar when the sheet is opened. That's how you'll run the sync. No need to go back into the Apps Script editor once it's set up.
 
 ---
 
 ## Before You Run It
 
-Fill in your credentials at the top of the script and click **Save** (the floppy disk icon, or Cmd/Ctrl + S). Then go back to your spreadsheet, refresh the page, and you should see the **Shopify Sync** menu appear in the toolbar. If it doesn't show up straight away, give it a few seconds — it runs on page load.
+Fill in your credentials at the top of the script and click **Save** (the floppy disk icon, or Cmd/Ctrl + S). Then go back to your spreadsheet, refresh the page, and you should see the **Shopify Sync** menu appear in the toolbar. If it doesn't show up straight away, give it a few seconds. It runs on page load.
 
 In [Part 4](/integrations/google-sheets-pricing/part-4) we'll run the sync for the first time and look at how to set it up to run automatically on a a schedule or by the simple click of a button.

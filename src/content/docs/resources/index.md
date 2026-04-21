@@ -5,14 +5,14 @@ sidebar:
   order: 1
 ---
 
-A running list of tools and references worth keeping in your back pocket. Not exhaustive — just things that have proven genuinely useful.
+A running list of tools and references worth keeping in your back pocket. Not exhaustive, just things that have proven genuinely useful.
 
 ---
 
 ## Documentation
 
 **[Shopify Docs](https://shopify.dev/docs)**
-The official source of truth for everything from Liquid to the Admin API. Worth bookmarking the API reference section separately — you'll be back there often.
+The official source of truth for everything from Liquid to the Admin API. Worth bookmarking the API reference section separately. You'll be back there often.
 
 ---
 
@@ -36,4 +36,4 @@ Created by Important Labs, this is exactly what it sounds like. A massive, brill
 ## GitHub
 
 **[Dawn Theme Repository](https://github.com/Shopify/dawn)**
-While technically an official Shopify resource, many developers miss the real value of its GitHub page. Digging into the commit history, pull requests, and active issues of Dawn — Shopify's reference theme — is a masterclass in modern Liquid architecture and best practices. Seeing how Shopify's own team approaches problems is more instructive than most tutorials.
+While technically an official Shopify resource, many developers miss the real value of its GitHub page. Digging into the commit history, pull requests, and active issues of Dawn (Shopify's reference theme) is a masterclass in modern Liquid architecture and best practices. Seeing how Shopify's own team approaches problems is more instructive than most tutorials.

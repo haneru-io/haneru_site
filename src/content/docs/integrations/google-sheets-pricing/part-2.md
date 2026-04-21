@@ -27,7 +27,7 @@ Once in the Dev Dashboard, click **Create app** in the top right and give it a n
 
 There's quite a bit on this page. Here's what matters and what doesn't.
 
-**URLs and Webhooks API version — skip these entirely.** These sections are for apps that embed inside the Shopify admin interface or need to receive real-time event notifications from your store. Our script does neither. It just pushes data to Shopify when you run it, so leave everything here as it is and scroll down.
+**URLs and Webhooks API version: skip these entirely.** These sections are for apps that embed inside the Shopify admin interface or need to receive real-time event notifications from your store. Our script does neither. It just pushes data to Shopify when you run it, so leave everything here as it is and scroll down.
 
 ---
 
@@ -46,7 +46,7 @@ Click **Select scopes** under the Access section and add:
 
 ## Step 4: Install the App on Your Store
 
-With scopes saved, you need to install the app on your store before credentials are generated. Look for the **Install app** button — Shopify will ask you to confirm the permissions you've requested. Confirm and install.
+With scopes saved, you need to install the app on your store before credentials are generated. Look for the **Install app** button. Shopify will ask you to confirm the permissions you've requested. Confirm and install.
 
 Once installed, you're ready to grab the credentials.
 
@@ -56,14 +56,14 @@ Once installed, you're ready to grab the credentials.
 
 After installation, go to the **API credentials** tab on your app. You'll find two values here:
 
-- **Client ID** — this is your API key, visible by default
-- **Client Secret** — click **Reveal secret key** to view it
+- **Client ID**: your API key, visible by default
+- **Client Secret**: click **Reveal secret key** to view it
 
 :::caution
 Treat your Client Secret like a password. Anyone with it can make API calls to your store with the permissions you've granted. Don't paste it into a shared spreadsheet or commit it to a public repository. We'll store it securely in the script in Part 3.
 :::
 
-Copy both values somewhere safe — you'll need them when we write the script.
+Copy both values somewhere safe. You'll need them when we write the script.
 
 ---
 

@@ -13,9 +13,9 @@ At this point everything is in place. The sheet is structured, the app is create
 
 Go back to your spreadsheet and refresh the page. After a few seconds you should see a **Shopify Sync** menu appear in the toolbar next to Help. Click it and select **Sync Prices**.
 
-The first time you run it, Google will ask you to authorise the script. This is standard — Apps Script needs permission to make external requests on your behalf. Click **Review permissions**, choose your Google account, and work through the prompts. You'll likely see a warning that the app isn't verified — that's expected for scripts you've written yourself. Click **Advanced** and then **Go to [your script name]** to proceed.
+The first time you run it, Google will ask you to authorise the script. This is standard; Apps Script needs permission to make external requests on your behalf. Click **Review permissions**, choose your Google account, and work through the prompts. You'll likely see a warning that the app isn't verified. That's expected for scripts you've written yourself. Click **Advanced** and then **Go to [your script name]** to proceed.
 
-Once authorised, the sync will start. You won't see much happening while it runs — just a loading cursor. For a large catalogue this can take a few minutes. When it finishes you'll get an alert showing how many products were updated, skipped, and errored.
+Once authorised, the sync will start. You won't see much happening while it runs, just a loading cursor. For a large catalogue this can take a few minutes. When it finishes you'll get an alert showing how many products were updated, skipped, and errored.
 
 :::tip
 The first run is a good one to keep an eye on. Open the Sync Log tab before you kick it off and keep it visible. If anything goes wrong with a specific product you'll see it there as it happens.
@@ -29,11 +29,11 @@ The Sync Log tab is created automatically on first run. Each row is one product,
 
 The main statuses to look for are:
 
-**UPDATED** — price pushed to Shopify successfully.
+**UPDATED**: price pushed to Shopify successfully.
 
-**NOT FOUND** — the handle in your sheet doesn't match any product in Shopify. Usually a typo. Check the Handle column and re-run.
+**NOT FOUND**: the handle in your sheet doesn't match any product in Shopify. Usually a typo. Check the Handle column and re-run.
 
-**ERROR** — something went wrong mid-update. The detail column will have the error message from Shopify, which usually points at what needs fixing.
+**ERROR**: something went wrong mid-update. The detail column will have the error message from Shopify, which usually points at what needs fixing.
 
 ---
 
@@ -61,6 +61,6 @@ You now have a live connection between your Google Sheet and your Shopify store.
 
 A few things worth knowing as you use it:
 
-The script updates every product in the sheet on each run. If you only want to push products where the price has actually changed, that's possible to add — it involves storing the last synced price in a tracking column and comparing it before each update. The production version of this script does exactly that, but it adds complexity that isn't worth it until you're comfortable with the basics.
+The script updates every product in the sheet on each run. If you only want to push products where the price has actually changed, that's possible to add. It involves storing the last synced price in a tracking column and comparing it before each update. The production version of this script does exactly that, but it adds complexity that isn't worth it until you're comfortable with the basics.
 
-The API version is set at the top of the script (`API_VERSION`). Shopify deprecates older API versions periodically — if the sync stops working one day with no obvious explanation, this is the first thing to check.
+The API version is set at the top of the script (`API_VERSION`). Shopify deprecates older API versions periodically. If the sync stops working one day with no obvious explanation, this is the first thing to check.
