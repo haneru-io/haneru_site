@@ -1,0 +1,154 @@
+---
+title: Liquid Templating Language
+description: An introduction to Liquid, the templating language that powers Shopify themes.
+sidebar:
+  order: 2
+---
+
+import LiquidExample from "../../../components/LiquidExample.astro";
+
+## What is Liquid?
+
+Liquid is Shopify's templating language. It lives inside your theme files and does one job: it pulls data from your store and outputs it as HTML for the browser to display.
+
+When a customer visits a product page, Shopify doesn't serve a static file. It takes the Liquid template for product pages, fills in the relevant data (title, price, images, variants) and generates the HTML on the fly. This happens on every page load.
+
+Liquid has three main building blocks:
+
+---
+
+### 1. Objects: Output Data
+
+Objects are wrapped in double curly braces `{{ }}` and output values from your store.
+
+<LiquidExample context="product.title = 'Chore Jacket', product.price = 8500, shop.name = 'Haneru Supply'">
+<Fragment slot="liquid">
+```liquid
+{{ product.title }}
+{{ product.price | money }}
+{{ shop.name }}
+```
+</Fragment>
+<Fragment slot="rendered">
+<p>Chore Jacket</p>
+<p>£85.00</p>
+<p>Haneru Supply</p>
+</Fragment>
+</LiquidExample>
+
+These pull data directly from Shopify: the product title, its formatted price, your store name. You'll see these throughout any theme file.
+
+---
+
+### 2. Tags: Logic and Control
+
+Tags are wrapped in curly braces with percent signs `{% %}` and handle logic: conditionals, loops, and layout structure.
+
+<LiquidExample context="product.available = true">
+<Fragment slot="liquid">
+```liquid
+{% if product.available %}
+  <button>Add to cart</button>
+{% else %}
+  <p>Out of stock</p>
+{% endif %}
+```
+</Fragment>
+<Fragment slot="rendered">
+<button>Add to cart</button>
+</Fragment>
+</LiquidExample>
+
+If `product.available` were `false`, the same snippet would render as `Out of stock` instead — the logic runs at render time, so each visitor gets the right state.
+
+<LiquidExample context="product.variants = [Small, Medium, Large]">
+<Fragment slot="liquid">
+```liquid
+<select>
+  {% for variant in product.variants %}
+    <option value="{{ variant.id }}">{{ variant.title }}</option>
+  {% endfor %}
+</select>
+```
+</Fragment>
+<Fragment slot="rendered">
+<select>
+  <option>Small</option>
+  <option>Medium</option>
+  <option>Large</option>
+</select>
+</Fragment>
+</LiquidExample>
+
+The `for` loop iterates over every variant on the product and outputs an `<option>` for each one, producing a working dropdown without the theme author ever having to hard-code the variants.
+
+---
+
+### 3. Filters — Transform Output
+
+Filters modify what an object outputs. They're added after a pipe character `|`.
+
+<LiquidExample context="product.price = 8500, product.title = 'Chore Jacket', article.published_at = 2026-04-15">
+<Fragment slot="liquid">
+```liquid
+{{ product.price | money }}
+{{ product.title | upcase }}
+{{ article.published_at | date: "%B %d, %Y" }}
+```
+</Fragment>
+<Fragment slot="rendered">
+<p>£85.00</p>
+<p>CHORE JACKET</p>
+<p>April 15, 2026</p>
+</Fragment>
+</LiquidExample>
+
+`money` formats a price with the correct currency symbol and decimal places, `upcase` converts text to uppercase, and `date` turns a raw timestamp into a readable format. Filters can also be chained — `{{ product.title | upcase | truncate: 20 }}` would uppercase the title and then trim it to 20 characters.
+
+---
+
+## Putting It Together
+
+Here's a real-world example — a snippet you might find in a product card template. It combines all three building blocks: objects pull the data, a filter formats the image URL and price, and a tag conditionally shows a sale badge.
+
+<LiquidExample
+  context="product = Chore Jacket at £85.00 (compare_at_price = £120.00)"
+  caption="Same snippet, different products — the badge only appears when there's a real discount."
+>
+<Fragment slot="liquid">
+```liquid
+<div class="product-card">
+  <a href="{{ product.url }}">
+    <img src="{{ product.featured_image | img_url: '400x' }}" alt="{{ product.title }}">
+    <h2>{{ product.title }}</h2>
+    <p>{{ product.price | money }}</p>
+
+    {% if product.compare_at_price > product.price %}
+      <span class="sale-badge">Sale</span>
+    {% endif %}
+  </a>
+</div>
+```
+</Fragment>
+<Fragment slot="rendered">
+<div style="max-width: 220px; font-family: inherit;">
+  <div style="aspect-ratio: 1 / 1; background: linear-gradient(135deg, #e2e8f0, #cbd5e1); border-radius: 0.3rem; display: grid; place-items: center; color: #64748b; font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase;">
+    Product image
+  </div>
+  <h2 style="margin: 0.6rem 0 0.2rem; font-size: 1rem; font-weight: 600;">Chore Jacket</h2>
+  <p style="margin: 0 0 0.4rem; font-size: 0.95rem;">£85.00</p>
+  <span style="display: inline-block; padding: 0.15rem 0.55rem; background: #dc2626; color: #fff; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.03em; border-radius: 0.2rem; text-transform: uppercase;">Sale</span>
+</div>
+</Fragment>
+</LiquidExample>
+
+No hardcoded values anywhere; everything is pulled from Shopify at render time. One template, one file — and every product on the store renders through it.
+
+---
+
+## Where to Go From Here
+
+Understanding Liquid at this level means you can open a theme file and follow what it's doing — which is a meaningful step. From here:
+
+- Browse Dawn's templates in **Online Store → Themes → Edit code** to see real Liquid in context
+- Shopify's [Liquid reference documentation](https://shopify.dev/docs/api/liquid) covers every available object, tag, and filter in full detail

@@ -28,7 +28,7 @@ Desktop apps for compressing images before they go anywhere near your theme. Uno
 
 ## References
 
-**[The Unofficial Super Shopify Developer Reference Desk 3000](https://www.shopifydevresources.com)**
+**[The Unofficial Super Shopify Developer Reference Desk 3000](https://importantlabs.com/shopify-reference-desk-3000/)**
 Created by Important Labs, this is exactly what it sounds like. A massive, brilliantly curated hub of bookmark links spanning APIs, Liquid cheat sheets, and GitHub integrations that are otherwise scattered all over the internet. Worth spending an hour with when you first come across it.
 
 ---

@@ -2,12 +2,12 @@
 title: Shopify Markets
 description: An overview of Shopify Markets — selling to multiple regions with tailored pricing, currencies, and shipping.
 sidebar:
-  order: 6
+  order: 7
 ---
 
 Shopify Markets is a Shopify Plus feature that lets you sell to customers in different regions from a single store, with each market having its own pricing, currency, language, and shipping rules. Rather than running separate stores for different countries, Markets gives you centralised control with region-specific customisation.
 
-This page covers what Markets is and how it's structured. For a practical guide to managing market-specific pricing at scale using Google Sheets and the Shopify Admin API, see the [Google Sheets → Shopify Markets Pricing](/integrations/google-sheets-pricing) tutorial in the Integrations section.
+This page covers what Markets is and how it's structured. For a practical guide to managing market-specific pricing at scale using Google Sheets and the Shopify Admin API, see the [Google Sheets → Shopify Markets Pricing](/integrations/google-sheets-pricing) tutorial in the Guides section.
 
 ---
 

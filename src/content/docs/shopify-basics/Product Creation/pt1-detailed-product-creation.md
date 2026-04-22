@@ -23,7 +23,7 @@ The **product name** and **description** are the core pieces of information your
 In the **Media** section, you can upload images or videos to visually showcase your product. Having good quality, consistent product imagery goes a long way in to drawing in customers and making them more likely to purchase.
 
 :::tip
-You can read more about [Product Image Best Practices](/reference/product-image-best-practice) in the reference section.
+You can read more about [Product Image Best Practices](/shopify-basics/media/product-image-best-practice) in the Shopify Basics section.
 :::
 
 As for the **Product Category** (not to be confused with **Collections**, which I’ll cover shortly), choose the option that best matches your item. Shopify uses this to recommend relevant **metafields** that you can use later for added customization. Don’t worry if you can’t find a perfect match—just select the closest relevant category.

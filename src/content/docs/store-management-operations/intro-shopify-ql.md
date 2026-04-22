@@ -1,6 +1,8 @@
 ---
 title: Introduction to ShopifyQL
 description: Learn how to use ShopifyQL to query and analyze your Shopify store data with practical examples.
+sidebar:
+  order: 6
 ---
 
 ShopifyQL is Shopify's powerful query language designed specifically for analyzing your store's data. Think of it as a simplified version of SQL, but built exclusively for e-commerce analytics. With ShopifyQL, you can extract insights from your orders, products, customers, and sales data without needing to export data or use third-party tools.

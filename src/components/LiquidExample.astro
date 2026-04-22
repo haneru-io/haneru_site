@@ -1,0 +1,226 @@
+---
+/**
+ * LiquidExample
+ *
+ * A two-pane "before/after" layout for showing a Liquid snippet alongside
+ * the front-end output it produces. Static — both panels are hand-authored.
+ *
+ * Usage (in .mdx):
+ *
+ *   <LiquidExample context="product.title = 'Chore Jacket'">
+ *     <Fragment slot="liquid">
+ *       ```liquid
+ *       {{ product.title | upcase }}
+ *       ```
+ *     </Fragment>
+ *     <Fragment slot="rendered">
+ *       <h2>CHORE JACKET</h2>
+ *     </Fragment>
+ *   </LiquidExample>
+ *
+ * Props:
+ *   - context (optional): a short "Given: ..." line shown above the panels,
+ *     useful when the input values aren't obvious from the snippet.
+ *   - caption (optional): an italic caption shown below the panels.
+ */
+
+interface Props {
+  context?: string;
+  caption?: string;
+}
+
+const { context, caption } = Astro.props;
+---
+
+<figure class="liquid-example not-content">
+  {
+    context && (
+      <p class="liquid-example__context">
+        <span class="liquid-example__context-label">Given:</span>
+        <code>{context}</code>
+      </p>
+    )
+  }
+  <div class="liquid-example__grid">
+    <div class="liquid-example__panel liquid-example__panel--code">
+      <div class="liquid-example__label">Liquid</div>
+      <div class="liquid-example__body liquid-example__body--code">
+        <slot name="liquid" />
+      </div>
+    </div>
+    <div class="liquid-example__panel liquid-example__panel--rendered">
+      <div class="liquid-example__label">Rendered</div>
+      <div class="liquid-example__body liquid-example__body--rendered">
+        <slot name="rendered" />
+      </div>
+    </div>
+  </div>
+  {caption && <figcaption class="liquid-example__caption">{caption}</figcaption>}
+</figure>
+
+<style>
+  .liquid-example {
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+
+  .liquid-example__context {
+    margin: 0 0 0.5rem;
+    font-size: 0.875rem;
+    color: var(--sl-color-gray-3);
+  }
+
+  .liquid-example__context-label {
+    font-weight: 600;
+    margin-right: 0.35rem;
+    color: var(--sl-color-gray-2);
+  }
+
+  .liquid-example__context code {
+    font-size: 0.85em;
+    padding: 0.1rem 0.35rem;
+    border-radius: 0.25rem;
+    background: var(--sl-color-gray-6);
+  }
+
+  .liquid-example__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  @media (min-width: 50rem) {
+    .liquid-example__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .liquid-example__panel {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .liquid-example__panel--code + .liquid-example__panel--rendered {
+    border-top: 1px solid var(--sl-color-gray-5);
+  }
+
+  @media (min-width: 50rem) {
+    .liquid-example__panel--code + .liquid-example__panel--rendered {
+      border-top: none;
+      border-left: 1px solid var(--sl-color-gray-5);
+    }
+  }
+
+  .liquid-example__label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    padding: 0.4rem 0.875rem;
+    background: var(--sl-color-gray-6);
+    color: var(--sl-color-gray-2);
+    border-bottom: 1px solid var(--sl-color-gray-5);
+  }
+
+  .liquid-example__body {
+    padding: 0.875rem 1rem;
+    flex: 1;
+    min-width: 0;
+    overflow-x: auto;
+  }
+
+  .liquid-example__body--code {
+    padding: 0;
+    background: var(--sl-color-gray-7, var(--sl-color-black));
+  }
+
+  /* Flatten code blocks inside the code panel so they sit flush with the frame.
+     Expressive Code (Starlight's syntax highlighter) renders a frame with an
+     empty figcaption header even when no filename is given, which shows as a
+     ghost bar above the code. We hide it and strip any frame chrome so the
+     code block starts immediately below the LIQUID label. */
+  .liquid-example__body--code :global(.expressive-code) {
+    margin: 0;
+  }
+
+  .liquid-example__body--code :global(.expressive-code .frame) {
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .liquid-example__body--code :global(.expressive-code figcaption),
+  .liquid-example__body--code :global(.expressive-code .frame .header) {
+    display: none !important;
+  }
+
+  .liquid-example__body--code :global(.expressive-code .frame::before),
+  .liquid-example__body--code :global(.expressive-code .frame::after) {
+    display: none !important;
+  }
+
+  .liquid-example__body--code :global(pre) {
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+  }
+
+  .liquid-example__body--rendered {
+    font-family: var(--sl-font-system);
+    color: var(--sl-color-text);
+    line-height: 1.5;
+  }
+
+  /* Tidy defaults for rendered output so it reads as storefront-ish content */
+  .liquid-example__body--rendered :global(h1),
+  .liquid-example__body--rendered :global(h2),
+  .liquid-example__body--rendered :global(h3) {
+    margin: 0 0 0.35rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .liquid-example__body--rendered :global(p) {
+    margin: 0 0 0.5rem;
+  }
+
+  .liquid-example__body--rendered :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  .liquid-example__body--rendered :global(button) {
+    font: inherit;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 1px solid currentColor;
+    background: var(--sl-color-accent, #2563eb);
+    color: var(--sl-color-accent-high, #fff);
+    cursor: default;
+  }
+
+  .liquid-example__body--rendered :global(select) {
+    font: inherit;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--sl-color-gray-4);
+    background: var(--sl-color-bg);
+    color: inherit;
+  }
+
+  .liquid-example__body--rendered :global(img) {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+  }
+
+  .liquid-example__caption {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--sl-color-gray-3);
+    font-style: italic;
+    text-align: center;
+  }
+</style>

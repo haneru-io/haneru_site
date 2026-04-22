@@ -1,0 +1,163 @@
+---
+title: What is a Shopify Theme?
+description: Understand what a Shopify theme is, how it's structured, and get an introduction to Liquid.
+sidebar:
+  order: 1
+---
+
+import { FileTree } from "@astrojs/starlight/components";
+
+A Shopify theme is the code that controls how your store looks and behaves on the front end. It covers everything a customer sees when they visit your site. Under the hood, a theme is a collection of files: HTML, CSS, JavaScript, and a templating language called **Liquid**, which is unique to Shopify.
+
+You don't need to touch any of this to run a store. But understanding what a theme is, even at a high level, makes you a more capable store owner and opens the door to customisations that go beyond what the visual editor allows.
+
+At first, it can seem quite invovled if you're not familiar with website file structures but once you interact with some of the elements within a theme, they quickly start to make more sense.
+
+---
+
+## The Theme Editor vs. Editing Code
+
+Shopify gives you two ways to work with your theme:
+
+**The Theme Editor** (no code required)
+Accessed via **Online Store → Themes → Customize**, this is a visual interface for making changes. You can add, remove, and reorder sections, change colours and fonts, upload images, and adjust layout settings. For the majority of store owners, this is all you'll ever need.
+
+**The Code Editor** (for deeper customisation)
+Accessed via **Online Store → Themes → Edit code**, this gives you direct access to the theme files themselves. You can edit Liquid templates, add custom CSS, and modify JavaScript. Changes here affect the theme at a level that the visual editor can't reach.
+
+:::note
+Always duplicate your theme before editing code. Go to **Online Store → Themes**, click the three-dot menu on your active theme, and select **Duplicate**. If something breaks in the copy, your original is untouched.
+:::
+
+---
+
+## Free vs. Paid Themes
+
+Shopify's [Theme Store](https://themes.shopify.com) has both free and paid options.
+
+**Free themes** are built and maintained by Shopify. They're well-built, performant, and regularly updated. Dawn is the current flagship free theme. It's fast, clean, and a solid starting point for most stores.
+
+**Paid themes** range from roughly $200–$400 and are built by third-party developers. They often come with more built-in features and more distinctive visual styles, which can reduce the need for third-party apps. Whether the cost is justified depends on how much your store's visual identity matters to your customers.
+
+For a new store, starting with a free theme is entirely reasonable. You can switch later. Your products, content, and settings don't move with the theme, but migrating is manageable.
+
+---
+
+## The Anatomy of a Shopify Theme
+
+Now we're clear on what a theme is and where you can make changes, let's breakdown what's on the inside!
+
+Every Shopify theme follows the same folder structure, regardless of whether it's Dawn, a paid theme, or something you've built yourself. Once you know what each folder does, navigating any theme's code becomes a lot more readable.
+
+Here's what a typical Shopify theme looks like:
+
+<FileTree>
+- assets/
+  - base.css
+  - component-card.css
+  - global.js
+  - product-form.js
+- config/
+  - settings_data.json
+  - settings_schema.json
+- layout/
+  - theme.liquid
+  - password.liquid
+- locales/
+  - en.default.json
+  - en.default.schema.json
+- sections/
+  - header.liquid
+  - footer.liquid
+  - main-product.liquid
+  - image-banner.liquid
+  - featured-collection.liquid
+- snippets/
+  - card-product.liquid
+  - icon-arrow.liquid
+  - price.liquid
+- templates/
+  - index.json
+  - product.json
+  - collection.json
+  - cart.json
+  - 404.liquid
+</FileTree>
+
+---
+
+### layout/
+
+This folder contains **theme.liquid**, which is the master wrapper for every page on your store. Every request a customer makes passes through it. It's where the `<html>`, `<head>`, and `<body>` tags live, along with the calls that load your CSS and JavaScript. Think of it as the frame around a painting: the individual page content changes, but the frame stays the same.
+
+There's also **password.liquid**, which is the page shown when your store is password-protected (common when you're still building).
+
+You won't need to edit `theme.liquid` often as a beginner, but knowing it exists helps explain why some changes affect every single page.
+
+---
+
+### templates/
+
+Templates define what appears on each type of page: the homepage, a product page, a collection page, the cart, and so on. In modern Shopify themes, most of these are **JSON files** rather than Liquid files. That might sound odd, but the JSON file isn't rendering content directly. It's a list of instructions that tells Shopify which sections to load, and in what order, for that page type.
+
+This is what makes the Theme Editor work. When you add or remove a section in the visual editor on your product page, Shopify is updating the corresponding `product.json` file behind the scenes.
+
+:::note
+You'll occasionally see `.liquid` template files alongside the `.json` ones (like `404.liquid`). These are older-style templates that render Liquid directly rather than delegating to sections. They're less flexible and can't be edited in the Theme Editor.
+:::
+
+---
+
+### sections/
+
+Sections are the building blocks of your storefront. Each one is a self-contained Liquid file that controls both the HTML output and the **settings that appear in the Theme Editor**.
+
+When you open the Theme Editor and see a panel on the right with options like "Image height" or "Button label", those options are defined inside the section's Liquid file, in a block called `{% schema %}`. The Theme Editor reads that schema and builds the UI from it automatically.
+
+This is the folder you'll spend the most time in if you're doing any meaningful theme development.
+
+---
+
+### snippets/
+
+Snippets are small, reusable pieces of Liquid code that sections (and other snippets) can pull in using the `{% render %}` tag. They don't appear in the Theme Editor directly; they exist to avoid repeating the same code in multiple places.
+
+A good example is `card-product.liquid` in Dawn. Several different sections (featured collections, search results, related products) all need to display a product card. Rather than duplicating that HTML in each section, they all render the same snippet.
+
+You'll mostly read snippets rather than create them as a beginner, but understanding they exist stops you from hunting for code that isn't where you'd expect it.
+
+---
+
+### assets/
+
+Everything that gets served directly to the browser lives here: CSS files, JavaScript files, fonts, and images that are part of the theme itself (not product images, which are uploaded separately).
+
+One thing worth knowing: **assets are flat**. There are no subfolders. Every file lives directly inside `assets/`, which is why you'll see names like `component-card.css` or `section-image-banner.css` rather than a nested folder structure. It's not elegant, but it's how Shopify works.
+
+---
+
+### config/
+
+This folder contains two files that work as a pair:
+
+**settings_schema.json** defines what options appear under "Theme settings" in the Theme Editor (things like brand colours, typography choices, and social media links). This file is the blueprint.
+
+**settings_data.json** stores the actual values a merchant has saved. When you pick a font or set your accent colour, that choice is written into `settings_data.json`.
+
+:::note
+`settings_data.json` changes every time someone saves a settings change in the Theme Editor. If you're using version control for your theme, be deliberate about whether you commit this file. It contains store-specific values, not code.
+:::
+
+---
+
+### locales/
+
+Translation files. Each JSON file in here maps a key to a string of text, and those keys are referenced throughout the theme's Liquid files. This is what makes a theme translatable into multiple languages without hardcoding any text.
+
+If your store only operates in one language, you can largely ignore this folder. If you're building a multilingual store, it becomes important.
+
+---
+
+:::tip
+**Where to focus first:** Start with `sections/` and `templates/`. Those two folders cover the majority of what you'll actually want to change. `layout/theme.liquid` is worth understanding early too, even if you don't edit it often. `locales/` and `snippets/` can wait until you're comfortable with the rest.
+:::

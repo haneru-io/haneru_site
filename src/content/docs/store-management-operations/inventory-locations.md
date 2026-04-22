@@ -5,7 +5,7 @@ sidebar:
   order: 1
 ---
 
-Inventory management in Shopify is built around the concept of **locations** — the physical or virtual places where you store your stock. Even if you only ship from one place (your home, a warehouse, or a fulfillment service), Shopify needs at least one location set up to track your inventory properly.
+Inventory management in Shopify is built around the concept of **locations** the physical or virtual places where you store your stock. Even if you only ship from one place (your home, a warehouse, or a fulfillment service), Shopify needs at least one location set up to track your inventory properly.
 
 Getting this right early saves a lot of manual work later. Adding a new location after you've already created products means going back and assigning stock to it product by product.
 

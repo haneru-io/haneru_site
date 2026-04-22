@@ -39,15 +39,7 @@ export default defineConfig({
           autogenerate: { directory: "theme-development-foundations" },
         },
         {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
-        },
-        {
-          label: "Resources",
-          autogenerate: { directory: "resources" },
-        },
-        {
-          label: "Integrations",
+          label: "Guides",
           items: [
             {
               label: "Google Sheets → Shopify Pricing",
@@ -84,6 +76,10 @@ export default defineConfig({
             {
               label: "About Haneru",
               link: "/about/",
+            },
+            {
+              label: "Resources",
+              link: "/resources/",
             },
           ],
         },
