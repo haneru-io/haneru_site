@@ -6,9 +6,9 @@ sidebar:
   order: 3
 ---
 
-So far, we’ve covered the basics: your product’s title, description, images, price, and how it fits into your store’s catalog. Now let’s dive into the four remaining key sections of the product page: **Inventory**, **Variants**, **Shipping** and **SEO**.
+So far, I've covered the basics: your product's title, description, images, price, and how it fits into your store's catalogue. Now let's dive into the four remaining key sections of the product page: **Inventory**, **Variants**, **Shipping** and **SEO**.
 
-![Product Edtior Part Two](/images/product_creation/product_editor_2.jpg)
+![Product Editor Part Two](/images/product_creation/product_editor_2.jpg)
 
 ---
 
@@ -31,7 +31,7 @@ In Shopify, **inventory** is simply the number of each product variant you have 
 A **variant** is a specific version of your product—like jacket in “Large” or “Blue.” Most clothing items come in multiple sizes, colours or styles, so you’ll use variants to:
 
 - Let customers pick exactly what they want
-- Track inventory per size/color
+- Track inventory per size/colour
 - Set different prices or images for each option
 
 Just click **Add variant**, enter your option names (e.g., Size, Colour), then list out the choices (e.g., S, M, L; Blue, Black).

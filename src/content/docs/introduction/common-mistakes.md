@@ -39,7 +39,7 @@ The mistake: setting the compare-at price *lower* than the actual price, or sett
 
 **The fix:** Compare-at price should always be *higher* than the Price field. If a product isn't on sale, leave compare-at blank entirely.
 
-![Product pricing fields showing compare-at price correctly set above the sale price](/images/mistakes/compare_at_prince.png)
+![Product pricing fields showing compare-at price correctly set above the sale price](/images/mistakes/compare_at_price.png)
 
 ---
 

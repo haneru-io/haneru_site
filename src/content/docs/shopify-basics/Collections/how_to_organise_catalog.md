@@ -29,7 +29,7 @@ Not clear on Tags? Check out [this article](/shopify-basics/collections/using_ta
 :::
 
 For example, in the demo store, all jackets tagged with **“Jacket”** will automatically appear in the Jackets collection.  
-This automation is far more efficient than manually adding products, especially as your catalog grows.
+This automation is far more efficient than manually adding products, especially as your catalogue grows.
 
 Once the correct tag has been added, the store will automatically display the relevant products.
 

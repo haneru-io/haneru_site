@@ -59,7 +59,7 @@ Tags are wrapped in curly braces with percent signs `{% %}` and handle logic: co
 </Fragment>
 </LiquidExample>
 
-If `product.available` were `false`, the same snippet would render as `Out of stock` instead — the logic runs at render time, so each visitor gets the right state.
+If `product.available` were `false`, the same snippet would render as `Out of stock` instead. The logic runs at render time, so each visitor gets the right state.
 
 <LiquidExample context="product.variants = [Small, Medium, Large]">
 <Fragment slot="liquid">
@@ -84,7 +84,7 @@ The `for` loop iterates over every variant on the product and outputs an `<optio
 
 ---
 
-### 3. Filters — Transform Output
+### 3. Filters: Transform Output
 
 Filters modify what an object outputs. They're added after a pipe character `|`.
 
@@ -109,7 +109,7 @@ Filters modify what an object outputs. They're added after a pipe character `|`.
 
 ## Putting It Together
 
-Here's a real-world example — a snippet you might find in a product card template. It combines all three building blocks: objects pull the data, a filter formats the image URL and price, and a tag conditionally shows a sale badge.
+Here's a real-world example, a snippet you might find in a product card template. It combines all three building blocks: objects pull the data, a filter formats the image URL and price, and a tag conditionally shows a sale badge.
 
 <LiquidExample
   context="product = Chore Jacket at £85.00 (compare_at_price = £120.00)"
@@ -126,6 +126,7 @@ Here's a real-world example — a snippet you might find in a product card templ
     {% if product.compare_at_price > product.price %}
       <span class="sale-badge">Sale</span>
     {% endif %}
+
   </a>
 </div>
 ```

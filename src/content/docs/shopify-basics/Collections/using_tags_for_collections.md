@@ -6,7 +6,7 @@ sidebar:
   order: 6
 ---
 
-One of Shopify’s most powerful features is the ability to create **automated collections**. Instead of adding products to a collection one by one, you can set up rules that automatically group products based on things like product tags, vendor, price, or inventory. This keeps your store organized and saves time, especially if you have a large catalog.
+One of Shopify’s most powerful features is the ability to create **automated collections**. Instead of adding products to a collection one by one, you can set up rules that automatically group products based on things like product tags, vendor, price, or inventory. This keeps your store organised and saves time, especially if you have a large catalogue.
 
 ---
 

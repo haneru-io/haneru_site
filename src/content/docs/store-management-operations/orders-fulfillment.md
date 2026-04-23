@@ -62,7 +62,7 @@ Shopify automatically updates the order status and notifies customers via email 
 - Tracking numbers are added
 - Shipping updates occur
 
-You can customize these notifications in **Settings → Notifications**.
+You can customise these notifications in **Settings → Notifications**.
 
 ---
 

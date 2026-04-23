@@ -1,11 +1,11 @@
 ---
 title: Introduction to ShopifyQL
-description: Learn how to use ShopifyQL to query and analyze your Shopify store data with practical examples.
+description: Learn how to use ShopifyQL to query and analyse your Shopify store data with practical examples.
 sidebar:
   order: 6
 ---
 
-ShopifyQL is Shopify's powerful query language designed specifically for analyzing your store's data. Think of it as a simplified version of SQL, but built exclusively for e-commerce analytics. With ShopifyQL, you can extract insights from your orders, products, customers, and sales data without needing to export data or use third-party tools.
+ShopifyQL is Shopify's powerful query language designed specifically for analysing your store's data. Think of it as a simplified version of SQL, but built exclusively for e-commerce analytics. With ShopifyQL, you can extract insights from your orders, products, customers, and sales data without needing to export data or use third-party tools.
 
 ## What is ShopifyQL?
 
@@ -13,12 +13,10 @@ ShopifyQL allows you to write queries directly in Shopify's analytics interface 
 
 - Analyze sales trends and patterns
 - Identify top-performing products or collections
-- Understand customer behavior across different regions
+- Understand customer behaviour across different regions
 - Create custom reports that aren't available in standard Shopify analytics
 
-Below is an example of the Shopify QL interface. The queries can be written using ShopifyQL or selected using the UI on the right.
-
-![Shopify QL Dashboard](#)
+The queries can be written using ShopifyQL directly or built with the UI in Shopify's reports editor.
 
 ## Basic ShopifyQL Syntax
 
@@ -33,10 +31,10 @@ ORDER BY [sorting]
 LIMIT [number]
 ```
 
-Not all clauses are required - you can build queries as simple or complex as your analysis needs. But first let's take a closer look at the parameters and theri defiinitions:
+Not all clauses are required - you can build queries as simple or complex as your analysis needs. But first let's take a closer look at the parameters and their definitions:
 
 `FROM` - Specifies the dataset you'll pull from. Such as sales, customers, online sessions. Pretty much everything that is logged as an activity by Shopify is able to be queried.
-`SHOW` - Choose the metric you want to explore from the dataset you've chosen. Naturally, this will yield different options based on what you're looking at. For exmaple, should you select `SALES` you'll be able to explore all associated metrics you'd from `customer_name` through to `average_order_value`.
+`SHOW` - Choose the metric you want to explore from the dataset you've chosen. Naturally, this will yield different options based on what you're looking at. For example, should you select `SALES` you'll be able to explore all associated metrics you'd from `customer_name` through to `average_order_value`.
 `WHERE` - This is used to filter your data based on specific conditions. It helps you narrow down results to only the records that match your criteria. For example `WHERE` `product_title` `CONTAINS` 'chore'. This query returns all products whose titles include the word "chore" — for instance, any product with "chore jacket" in its name.
 `GROUP BY` - Groups your results by a specific field, collapsing individual rows into summarised totals. For example, `GROUP BY product_title` returns one row per product with its aggregated values, rather than a separate row for every individual order line.
 `ORDER BY` - Sorts your results by a chosen field. Combine with `ASC` (ascending, lowest first) or `DESC` (descending, highest first). For example, `ORDER BY net_sales DESC` puts your best-selling products at the top.
@@ -60,7 +58,7 @@ VISUALIZE net_sales
 
 - Reads `FROM SALES` as the dataset to look up
 - Uses `GROUP BY`
-- Specifices date range with `SINCE`
+- Specifies date range with `SINCE`
 - `ORDER BY` presents the data from high to low
 - Restrict returned number of products to 10 with `LIMIT`
 
@@ -88,7 +86,7 @@ You can adjust the date filter to focus on different time periods, such as the l
 
 ## Example 3: Average Order Value by Day of Week
 
-Want to know if certain days of the week bring in higher-value orders? This insight can help optimize your marketing schedule:
+Want to know if certain days of the week bring in higher-value orders? This insight can help optimise your marketing schedule:
 
 ```sql
 FROM sales
@@ -99,10 +97,10 @@ VISUALIZE average_order_value
 
 **What this query does:**
 
-- `day_of_week(order_date)` extracts which day of the week each order was placed
-- `avg(total_sales)` calculates the average order value for each day
-- Groups results by day of the week
-- Shows which days tend to have higher-value orders
+- Reads `FROM sales` as the dataset
+- `SHOW average_order_value` pulls the AOV metric
+- `TIMESERIES day_of_week WITH TOTALS` groups results by day of the week and adds a totals row
+- `VISUALIZE average_order_value` renders the result as a chart
 
 This can reveal patterns like "our Sunday customers spend 30% more on average" which could inform when you launch promotions or send marketing emails.
 
@@ -128,7 +126,7 @@ You can write and run ShopifyQL queries in:
 The most frequently used data sources in ShopifyQL include:
 
 - `orders` - Order data including products, customers, and sales amounts
-- `products` - Product catalog information
+- `products` - Product catalogue information
 - `customers` - Customer details and segments
 - `sales` - Sales data aggregated at different levels
 

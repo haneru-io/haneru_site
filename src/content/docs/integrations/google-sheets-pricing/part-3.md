@@ -253,4 +253,4 @@ Every time the script runs it writes a row to a tab called Sync Log, one row per
 
 Fill in your credentials at the top of the script and click **Save** (the floppy disk icon, or Cmd/Ctrl + S). Then go back to your spreadsheet, refresh the page, and you should see the **Shopify Sync** menu appear in the toolbar. If it doesn't show up straight away, give it a few seconds. It runs on page load.
 
-In [Part 4](/integrations/google-sheets-pricing/part-4) we'll run the sync for the first time and look at how to set it up to run automatically on a a schedule or by the simple click of a button.
+In [Part 4](/integrations/google-sheets-pricing/part-4) I'll run the sync for the first time and look at how to set it up to run automatically on a schedule or by the simple click of a button.

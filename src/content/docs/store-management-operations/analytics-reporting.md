@@ -5,7 +5,7 @@ sidebar:
   order: 5
 ---
 
-Data is one of the most powerful tools for growing your Shopify store. Understanding your sales trends, product performance, and customer behavior allows you to make informed decisions that improve revenue and operational efficiency.
+Data is one of the most powerful tools for growing your Shopify store. Understanding your sales trends, product performance, and customer behaviour allows you to make informed decisions that improve revenue and operational efficiency.
 
 Shopify provides a suite of analytics tools, ranging from pre-built reports to **ShopifyQL**, a query language designed to extract custom insights from your store’s data.
 
@@ -51,6 +51,6 @@ FROM sales
 VISUALIZE total_sales
 ``` 
 
-Here we identify your top 20 highest spend customers based on purchase history.
+This identifies your top 20 highest spend customers based on purchase history.
 
 For a more in-depth look at ShopifyQL and building your own queries, you can read the guide [An Intro to ShopifyQL](/store-management-operations/intro-shopify-ql)

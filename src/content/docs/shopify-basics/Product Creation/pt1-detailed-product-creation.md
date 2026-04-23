@@ -6,7 +6,7 @@ sidebar:
   order: 2
 ---
 
-Whilst in previous sections we have covered a few select points of the Shopify admin and back end settings, in this particularly guide I will aim to cover product creation in-depth, as there are many things that can be easily overlooked which can result in things such as incorrect pricing or poor discoverability of your product.
+Whilst I've covered a few select points of the Shopify admin and back end settings in previous sections, in this guide I'll go into product creation in-depth, as there are many things that can be easily overlooked which can result in things such as incorrect pricing or poor discoverability of your product.
 
 ![Shopify Add Product Screen](/images/product_creation/shopify_add_products.png)
 
@@ -63,14 +63,14 @@ Use tags thoughtfully and consistently. It’s tempting to go wild with them at 
 
 For example, using `Jackets`, `Jacket`, and `Coats` as separate tags might seem harmless, but they’re all treated as unique – which can lead to unexpected results when setting up Smart Collections.
 
-A good rule of thumb: **choose one clear, relevant tag per product type and stick to it**. Consistency here will save you headaches later and make your store much easier to organize.
+A good rule of thumb: **choose one clear, relevant tag per product type and stick to it**. Consistency here will save you headaches later and make your store much easier to organise.
 :::
 
 ---
 
 ### 3. Pricing Information
 
-The third section we're concerned with here is pricing. This is one of several ways you can input pricing for your products.
+The third section I want to cover here is pricing. This is one of several ways you can input pricing for your products.
 
 **Price**  
 This is the main price of your product – the one your customers will see and pay at checkout. Think of it as your regular selling price or RRP (Recommended Retail Price).

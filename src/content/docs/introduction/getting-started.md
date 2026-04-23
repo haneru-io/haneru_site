@@ -20,14 +20,14 @@ There’s no fluff here, no regurgitated docs, just some practical insights to h
 - [Sign up to Shopify](https://accounts.shopify.com/signup) and create your first store. If you already have one, great! Let's build.
 
 :::note
-We will be using Shopify's default [Fabric](https://themes.shopify.com/themes/fabric/styles/fabric) theme as our demo store.
+I'll be using Shopify's default [Fabric](https://themes.shopify.com/themes/fabric/styles/fabric) theme as the demo store.
 :::
 
 ---
 
 # Initial Store Setup
 
-Before creating products, it’s important to take care of a few behind-the-scenes settings. Doing this early ensures your store runs smoothly as your catalog grows.
+Before creating products, it’s important to take care of a few behind-the-scenes settings. Doing this early ensures your store runs smoothly as your catalogue grows.
 
 ### Policies
 
@@ -70,7 +70,7 @@ Shopify isn’t limited to your online storefront. Expand your reach by connecti
 
 ![Shopify Sales Channels Menu](/images/store_setup/shopify_sales_channels.png)
 
-Each channel connects via a Shopify app and includes tools for advertising, syncing catalogs, and tracking performance. Setting them up early helps you maximize exposure.
+Each channel connects via a Shopify app and includes tools for advertising, syncing catalogues, and tracking performance. Setting them up early helps you maximise exposure.
 
 :::note
 You can add sales channels later, but considering them early helps you plan your store’s growth strategy.
@@ -80,7 +80,7 @@ You can add sales channels later, but considering them early helps you plan your
 
 ## Next Steps
 
-With your policies, locations, and sales channels set up, your store is ready for product creation. From here, you can move on to adding your first products and organising your catalog.
+With your policies, locations, and sales channels set up, your store is ready for product creation. From here, you can move on to adding your first products and organising your catalogue.
 
 ---
 

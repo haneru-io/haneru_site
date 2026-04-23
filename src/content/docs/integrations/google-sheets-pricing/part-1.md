@@ -21,10 +21,10 @@ The good news is most of them can go. Delete everything except these five:
 |--------|-------|-------------|---------------|---------------|
 
 :::caution
-Keep these column headers exactly as they are. Don't rename them. Shopify uses these specific names to recognise the data when importing, and we'll be leaning on that same structure later in the process.
+Keep these column headers exactly as they are. Don't rename them. Shopify uses these specific names to recognise the data when importing, and I'll be leaning on that same structure later in the process.
 :::
 
-You'll notice straight away that most products take up more than one row. That's Shopify exporting each variant separately. A jacket that comes in Small, Medium, and Large will have three rows, all sharing the same Handle. It might seem like this is useful (apply a different price per size?) but for our purposes it's actually just noise. We're going to use the **Handle** as the unique identifier for each product, and once a price is assigned to a product, all its variants inherit it automatically. One Handle, one price.
+You'll notice straight away that most products take up more than one row. That's Shopify exporting each variant separately. A jacket that comes in Small, Medium, and Large will have three rows, all sharing the same Handle. It might seem like this is useful (apply a different price per size?) but for this setup it's actually just noise. I'm going to use the **Handle** as the unique identifier for each product, and once a price is assigned to a product, all its variants inherit it automatically. One Handle, one price.
 
 So the next step is to strip out the duplicate variant rows and get down to one row per product:
 
@@ -79,4 +79,4 @@ This is a small step but worth doing before you share the sheet with anyone else
 - Duplicate variant rows removed
 - The sheet tab named consistently
 
-That's the sheet done. In [Part 2](/integrations/google-sheets-pricing/part-2) we'll set up API access in Shopify so the script has permission to write to your store.
+That's the sheet done. In [Part 2](/integrations/google-sheets-pricing/part-2) I'll set up API access in Shopify so the script has permission to write to your store.

@@ -54,7 +54,7 @@ These categories are worth sorting out before you launch:
 
 ## Sales Channels
 
-Sales channels connect your Shopify product catalog to external platforms. Once connected, your products sync automatically — you manage everything from one Shopify admin without maintaining separate listings elsewhere.
+Sales channels connect your Shopify product catalogue to external platforms. Once connected, your products sync automatically — you manage everything from one Shopify admin without maintaining separate listings elsewhere.
 
 ### Available Sales Channels
 
@@ -67,7 +67,7 @@ Lists your products on Google Shopping and enables Performance Max campaigns dir
 Tag products in posts and stories, and create a Shop tab on your Facebook Page. Requires connecting your Facebook Business Manager account. Worth setting up early if your audience is active on either platform.
 
 **TikTok**
-Sync your product catalog and run ads or create shoppable videos. Growing quickly as a discovery platform, particularly for fashion and lifestyle products.
+Sync your product catalogue and run ads or create shoppable videos. Growing quickly as a discovery platform, particularly for fashion and lifestyle products.
 
 **Amazon**
 List Shopify products directly on Amazon and manage orders from your Shopify admin. Worth considering if your products suit a marketplace audience, though Amazon's fees are significant and the setup is more involved than other channels.
@@ -94,5 +94,5 @@ Sales channels require a paid Shopify plan before you can publish products to th
 
 - Install apps sparingly — only when you have a specific need
 - Prioritise reviews, email marketing, and basic SEO before launch
-- Sales channels let you sell on Google, Instagram, TikTok, and more from your existing Shopify catalog
+- Sales channels let you sell on Google, Instagram, TikTok, and more from your existing Shopify catalogue
 - Get your product content in good shape before connecting channels, as it syncs automatically

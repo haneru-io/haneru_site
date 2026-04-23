@@ -5,7 +5,7 @@ sidebar:
   order: 3
 ---
 
-In this part we handle the Shopify side of things. We need to create a custom app that gives our script the credentials and permissions to communicate with your store.
+In this part I'll handle the Shopify side of things. You need to create a custom app that gives the script the credentials and permissions to communicate with your store.
 
 ---
 
@@ -15,7 +15,7 @@ Head to **Settings → Apps and sales channels**. Near the top of the page you'l
 
 ![Shopify Settings showing the App development section and Build apps in Dev Dashboard button](/images/gsheet_integration/shopify_settings_for_apps.png)
 
-Before clicking it, one thing worth knowing. As of January 2026, Shopify retired the old legacy custom apps system. If you've come across tutorials referencing Private Apps or an API key setup under Settings, they're out of date. The Dev Dashboard is the current approach and it's where we're headed. Don't worry, the process has not changed too much.
+Before clicking it, one thing worth knowing. As of January 2026, Shopify retired the old legacy custom apps system. If you've come across tutorials referencing Private Apps or an API key setup under Settings, they're out of date. The Dev Dashboard is the current approach and it's where you're headed. Don't worry, the process has not changed too much.
 
 ---
 
@@ -27,7 +27,7 @@ Once in the Dev Dashboard, click **Create app** in the top right and give it a n
 
 There's quite a bit on this page. Here's what matters and what doesn't.
 
-**URLs and Webhooks API version: skip these entirely.** These sections are for apps that embed inside the Shopify admin interface or need to receive real-time event notifications from your store. Our script does neither. It just pushes data to Shopify when you run it, so leave everything here as it is and scroll down.
+**URLs and Webhooks API version: skip these entirely.** These sections are for apps that embed inside the Shopify admin interface or need to receive real-time event notifications from your store. The script does neither. It just pushes data to Shopify when you run it, so leave everything here as it is and scroll down.
 
 ---
 
@@ -60,10 +60,10 @@ After installation, go to the **API credentials** tab on your app. You'll find t
 - **Client Secret**: click **Reveal secret key** to view it
 
 :::caution
-Treat your Client Secret like a password. Anyone with it can make API calls to your store with the permissions you've granted. Don't paste it into a shared spreadsheet or commit it to a public repository. We'll store it securely in the script in Part 3.
+Treat your Client Secret like a password. Anyone with it can make API calls to your store with the permissions you've granted. Don't paste it into a shared spreadsheet or commit it to a public repository. I'll store it securely in the script in Part 3.
 :::
 
-Copy both values somewhere safe. You'll need them when we write the script.
+Copy both values somewhere safe. You'll need them when I write the script.
 
 ---
 
@@ -74,4 +74,4 @@ Copy both values somewhere safe. You'll need them when we write the script.
 - App installed on your store
 - Client ID and Client Secret copied and ready
 
-In [Part 3](/integrations/google-sheets-pricing/part-3) we'll write the script itself and connect everything together.
+In [Part 3](/integrations/google-sheets-pricing/part-3) I'll write the script itself and connect everything together.

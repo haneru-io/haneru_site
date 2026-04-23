@@ -47,7 +47,7 @@ Look for a **Product grid** or **Collection grid** section in the left panel of 
 
 ## Enabling Filters and Sorting
 
-Filters let customers narrow down a collection by attributes like size, colour, price, or availability. This becomes increasingly valuable as your catalog grows.
+Filters let customers narrow down a collection by attributes like size, colour, price, or availability. This becomes increasingly valuable as your catalogue grows.
 
 To enable filters:
 

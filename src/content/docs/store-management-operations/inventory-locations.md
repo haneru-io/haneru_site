@@ -72,7 +72,7 @@ As orders come in, Shopify automatically reduces inventory at the fulfilling loc
 
 - **Manually adjust stock** at any time by editing the quantity on a product
 - **Transfer stock between locations** via **Products → Transfers** — useful when moving goods from a warehouse to a retail location
-- **View inventory by location** from **Products → Inventory**, which gives you a full picture across your entire catalog
+- **View inventory by location** from **Products → Inventory**, which gives you a full picture across your entire catalogue
 
 ---
 
